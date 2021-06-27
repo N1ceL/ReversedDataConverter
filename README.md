@@ -2,7 +2,8 @@
 
 # ReversedDataConverter
 #### Reversed Data Converter - just program to calculate and convert hex, int numbers, flags, bytes, patterns and etc. Useful if you work with program memory/reverse engineering.
-#### Showcase - https://youtu.be/JSJYl10CKME
+#### Showcase video - https://youtu.be/JSJYl10CKME
+#### Download binary - https://github.com/N1ceL/ReversedDataConverter/releases/
 
 # Description
 
