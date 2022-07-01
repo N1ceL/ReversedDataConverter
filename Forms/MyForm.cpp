@@ -7,7 +7,10 @@ using namespace System::Windows::Forms;
 
 
 
-void main(array<String^>^ args) {
+void main(array<String^>^ args) 
+{
+	SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_SYSTEM_AWARE);
+
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	Project1::MyForm form;

@@ -36,10 +36,6 @@ namespace Project1 {
 		/// </summary>
 		~MyForm()
 		{
-			if (components)
-			{
-				delete components;
-			}
 		}
 
 	private: System::Windows::Forms::RichTextBox^ richTextBox_notepad;
@@ -129,7 +125,6 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label38;
 	private: System::Windows::Forms::ComboBox^ comboBox_bit_style;
 	private: System::Windows::Forms::Label^ label28;
-	private: System::ComponentModel::IContainer^ components;
 
 	private:
 		/// <summary>
@@ -144,6 +139,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->richTextBox_notepad = (gcnew System::Windows::Forms::RichTextBox());
 			this->label_notepad = (gcnew System::Windows::Forms::Label());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
@@ -249,18 +245,20 @@ namespace Project1 {
 			// 
 			this->richTextBox_notepad->BackColor = System::Drawing::SystemColors::Window;
 			this->richTextBox_notepad->ForeColor = System::Drawing::SystemColors::InfoText;
-			this->richTextBox_notepad->Location = System::Drawing::Point(12, 25);
+			this->richTextBox_notepad->Location = System::Drawing::Point(22, 46);
+			this->richTextBox_notepad->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->richTextBox_notepad->Name = L"richTextBox_notepad";
-			this->richTextBox_notepad->Size = System::Drawing::Size(300, 600);
+			this->richTextBox_notepad->Size = System::Drawing::Size(547, 1104);
 			this->richTextBox_notepad->TabIndex = 1;
 			this->richTextBox_notepad->Text = L"";
 			// 
 			// label_notepad
 			// 
 			this->label_notepad->AutoSize = true;
-			this->label_notepad->Location = System::Drawing::Point(120, 9);
+			this->label_notepad->Location = System::Drawing::Point(220, 17);
+			this->label_notepad->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label_notepad->Name = L"label_notepad";
-			this->label_notepad->Size = System::Drawing::Size(79, 13);
+			this->label_notepad->Size = System::Drawing::Size(145, 25);
 			this->label_notepad->TabIndex = 13;
 			this->label_notepad->Text = L"[ mini notepad ]";
 			// 
@@ -281,9 +279,11 @@ namespace Project1 {
 			this->groupBox3->Controls->Add(this->textBox_calc2_10ui);
 			this->groupBox3->Controls->Add(this->textBox_calc2_10si);
 			this->groupBox3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->groupBox3->Location = System::Drawing::Point(15, 175);
+			this->groupBox3->Location = System::Drawing::Point(28, 323);
+			this->groupBox3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(661, 137);
+			this->groupBox3->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox3->Size = System::Drawing::Size(1212, 253);
 			this->groupBox3->TabIndex = 29;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"[ int/hex - calculator/converter - autodetect ]";
@@ -291,121 +291,135 @@ namespace Project1 {
 			// label24
 			// 
 			this->label24->AutoSize = true;
-			this->label24->Location = System::Drawing::Point(8, 41);
+			this->label24->Location = System::Drawing::Point(15, 76);
+			this->label24->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label24->Name = L"label24";
-			this->label24->Size = System::Drawing::Size(24, 13);
+			this->label24->Size = System::Drawing::Size(44, 25);
 			this->label24->TabIndex = 35;
 			this->label24->Text = L"any";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(323, 22);
+			this->label8->Location = System::Drawing::Point(592, 41);
+			this->label8->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(31, 13);
+			this->label8->Size = System::Drawing::Size(56, 25);
 			this->label8->TabIndex = 34;
 			this->label8->Text = L"enter";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(8, 106);
+			this->label5->Location = System::Drawing::Point(15, 196);
+			this->label5->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(24, 13);
+			this->label5->Size = System::Drawing::Size(44, 25);
 			this->label5->TabIndex = 32;
 			this->label5->Text = L"x16";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(521, 61);
+			this->label1->Location = System::Drawing::Point(955, 113);
+			this->label1->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(61, 13);
+			this->label1->Size = System::Drawing::Size(111, 25);
 			this->label1->TabIndex = 33;
 			this->label1->Text = L"signed float";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(8, 80);
+			this->label6->Location = System::Drawing::Point(15, 148);
+			this->label6->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(24, 13);
+			this->label6->Size = System::Drawing::Size(44, 25);
 			this->label6->TabIndex = 31;
 			this->label6->Text = L"x10";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(315, 61);
+			this->label4->Location = System::Drawing::Point(578, 113);
+			this->label4->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(52, 13);
+			this->label4->Size = System::Drawing::Size(95, 25);
 			this->label4->TabIndex = 32;
 			this->label4->Text = L"signed int";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(105, 61);
+			this->label7->Location = System::Drawing::Point(193, 113);
+			this->label7->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(64, 13);
+			this->label7->Size = System::Drawing::Size(117, 25);
 			this->label7->TabIndex = 31;
 			this->label7->Text = L"unsigned int";
 			// 
 			// textBox_calc2_16sf
 			// 
 			this->textBox_calc2_16sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_16sf->Location = System::Drawing::Point(449, 103);
+			this->textBox_calc2_16sf->Location = System::Drawing::Point(823, 190);
+			this->textBox_calc2_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_16sf->Name = L"textBox_calc2_16sf";
-			this->textBox_calc2_16sf->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_16sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16sf->TabIndex = 27;
 			// 
 			// textBox_calc2_enter
 			// 
 			this->textBox_calc2_enter->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_calc2_enter->Location = System::Drawing::Point(37, 38);
+			this->textBox_calc2_enter->Location = System::Drawing::Point(68, 70);
+			this->textBox_calc2_enter->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_enter->Name = L"textBox_calc2_enter";
-			this->textBox_calc2_enter->Size = System::Drawing::Size(612, 20);
+			this->textBox_calc2_enter->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc2_enter->TabIndex = 28;
 			this->textBox_calc2_enter->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_calc2_enter_TextChanged);
 			// 
 			// textBox_calc2_16ui
 			// 
 			this->textBox_calc2_16ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_16ui->Location = System::Drawing::Point(37, 103);
+			this->textBox_calc2_16ui->Location = System::Drawing::Point(68, 190);
+			this->textBox_calc2_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_16ui->Name = L"textBox_calc2_16ui";
-			this->textBox_calc2_16ui->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_16ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16ui->TabIndex = 26;
 			// 
 			// textBox_calc2_16si
 			// 
 			this->textBox_calc2_16si->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_16si->Location = System::Drawing::Point(243, 103);
+			this->textBox_calc2_16si->Location = System::Drawing::Point(446, 190);
+			this->textBox_calc2_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_16si->Name = L"textBox_calc2_16si";
-			this->textBox_calc2_16si->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_16si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16si->TabIndex = 25;
 			// 
 			// textBox_calc2_10sf
 			// 
 			this->textBox_calc2_10sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_10sf->Location = System::Drawing::Point(449, 77);
+			this->textBox_calc2_10sf->Location = System::Drawing::Point(823, 142);
+			this->textBox_calc2_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_10sf->Name = L"textBox_calc2_10sf";
-			this->textBox_calc2_10sf->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_10sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10sf->TabIndex = 23;
 			// 
 			// textBox_calc2_10ui
 			// 
 			this->textBox_calc2_10ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_10ui->Location = System::Drawing::Point(37, 77);
+			this->textBox_calc2_10ui->Location = System::Drawing::Point(68, 142);
+			this->textBox_calc2_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_10ui->Name = L"textBox_calc2_10ui";
-			this->textBox_calc2_10ui->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_10ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10ui->TabIndex = 21;
 			// 
 			// textBox_calc2_10si
 			// 
 			this->textBox_calc2_10si->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc2_10si->Location = System::Drawing::Point(243, 77);
+			this->textBox_calc2_10si->Location = System::Drawing::Point(446, 142);
+			this->textBox_calc2_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc2_10si->Name = L"textBox_calc2_10si";
-			this->textBox_calc2_10si->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc2_10si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10si->TabIndex = 19;
 			// 
 			// groupBox1
@@ -417,9 +431,11 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->textBox_lc);
 			this->groupBox1->Controls->Add(this->textBox_uc);
-			this->groupBox1->Location = System::Drawing::Point(15, 15);
+			this->groupBox1->Location = System::Drawing::Point(28, 28);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(661, 123);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox1->Size = System::Drawing::Size(1212, 227);
 			this->groupBox1->TabIndex = 30;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"[ register converter ]";
@@ -427,61 +443,68 @@ namespace Project1 {
 			// label26
 			// 
 			this->label26->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label26->Location = System::Drawing::Point(6, 56);
+			this->label26->Location = System::Drawing::Point(11, 103);
+			this->label26->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label26->Name = L"label26";
-			this->label26->Size = System::Drawing::Size(649, 2);
+			this->label26->Size = System::Drawing::Size(1190, 4);
 			this->label26->TabIndex = 42;
 			// 
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(6, 32);
+			this->label9->Location = System::Drawing::Point(11, 59);
+			this->label9->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(31, 13);
+			this->label9->Size = System::Drawing::Size(56, 25);
 			this->label9->TabIndex = 35;
 			this->label9->Text = L"enter";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(6, 67);
+			this->label3->Location = System::Drawing::Point(11, 124);
+			this->label3->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(57, 13);
+			this->label3->Size = System::Drawing::Size(104, 25);
 			this->label3->TabIndex = 29;
 			this->label3->Text = L"uppercase";
 			// 
 			// textBox_rvalue
 			// 
 			this->textBox_rvalue->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_rvalue->Location = System::Drawing::Point(79, 29);
+			this->textBox_rvalue->Location = System::Drawing::Point(145, 54);
+			this->textBox_rvalue->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_rvalue->Name = L"textBox_rvalue";
-			this->textBox_rvalue->Size = System::Drawing::Size(570, 20);
+			this->textBox_rvalue->Size = System::Drawing::Size(1042, 29);
 			this->textBox_rvalue->TabIndex = 30;
 			this->textBox_rvalue->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_rvalue_TextChanged);
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(6, 93);
+			this->label2->Location = System::Drawing::Point(11, 172);
+			this->label2->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(55, 13);
+			this->label2->Size = System::Drawing::Size(100, 25);
 			this->label2->TabIndex = 28;
 			this->label2->Text = L"lowercase";
 			// 
 			// textBox_lc
 			// 
 			this->textBox_lc->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_lc->Location = System::Drawing::Point(79, 90);
+			this->textBox_lc->Location = System::Drawing::Point(145, 166);
+			this->textBox_lc->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_lc->Name = L"textBox_lc";
-			this->textBox_lc->Size = System::Drawing::Size(570, 20);
+			this->textBox_lc->Size = System::Drawing::Size(1042, 29);
 			this->textBox_lc->TabIndex = 27;
 			// 
 			// textBox_uc
 			// 
 			this->textBox_uc->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_uc->Location = System::Drawing::Point(79, 64);
+			this->textBox_uc->Location = System::Drawing::Point(145, 118);
+			this->textBox_uc->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_uc->Name = L"textBox_uc";
-			this->textBox_uc->Size = System::Drawing::Size(570, 20);
+			this->textBox_uc->Size = System::Drawing::Size(1042, 29);
 			this->textBox_uc->TabIndex = 22;
 			// 
 			// groupBox4
@@ -503,9 +526,11 @@ namespace Project1 {
 			this->groupBox4->Controls->Add(this->label11);
 			this->groupBox4->Controls->Add(this->textBox_calc_10si);
 			this->groupBox4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->groupBox4->Location = System::Drawing::Point(15, 15);
+			this->groupBox4->Location = System::Drawing::Point(28, 28);
+			this->groupBox4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(661, 154);
+			this->groupBox4->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox4->Size = System::Drawing::Size(1212, 284);
 			this->groupBox4->TabIndex = 30;
 			this->groupBox4->TabStop = false;
 			this->groupBox4->Text = L"[ int/hex - calculator/converter ]";
@@ -513,139 +538,155 @@ namespace Project1 {
 			// label20
 			// 
 			this->label20->AutoSize = true;
-			this->label20->Location = System::Drawing::Point(7, 123);
+			this->label20->Location = System::Drawing::Point(13, 227);
+			this->label20->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(24, 13);
+			this->label20->Size = System::Drawing::Size(44, 25);
 			this->label20->TabIndex = 37;
 			this->label20->Text = L"x16";
 			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
-			this->label22->Location = System::Drawing::Point(7, 97);
+			this->label22->Location = System::Drawing::Point(13, 179);
+			this->label22->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(24, 13);
+			this->label22->Size = System::Drawing::Size(44, 25);
 			this->label22->TabIndex = 36;
 			this->label22->Text = L"x10";
 			// 
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(323, 13);
+			this->label10->Location = System::Drawing::Point(592, 24);
+			this->label10->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(31, 13);
+			this->label10->Size = System::Drawing::Size(56, 25);
 			this->label10->TabIndex = 35;
 			this->label10->Text = L"enter";
 			// 
 			// textBox_calc_enter_x16
 			// 
 			this->textBox_calc_enter_x16->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_calc_enter_x16->Location = System::Drawing::Point(37, 55);
+			this->textBox_calc_enter_x16->Location = System::Drawing::Point(68, 102);
+			this->textBox_calc_enter_x16->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_enter_x16->Name = L"textBox_calc_enter_x16";
-			this->textBox_calc_enter_x16->Size = System::Drawing::Size(612, 20);
+			this->textBox_calc_enter_x16->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc_enter_x16->TabIndex = 30;
 			this->textBox_calc_enter_x16->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_calc_enter_x16_TextChanged);
 			// 
 			// textBox_calc_enter_x10
 			// 
 			this->textBox_calc_enter_x10->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_calc_enter_x10->Location = System::Drawing::Point(37, 29);
+			this->textBox_calc_enter_x10->Location = System::Drawing::Point(68, 54);
+			this->textBox_calc_enter_x10->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_enter_x10->Name = L"textBox_calc_enter_x10";
-			this->textBox_calc_enter_x10->Size = System::Drawing::Size(612, 20);
+			this->textBox_calc_enter_x10->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc_enter_x10->TabIndex = 28;
 			this->textBox_calc_enter_x10->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_calc_enter_x10_TextChanged);
 			// 
 			// textBox_calc_16sf
 			// 
 			this->textBox_calc_16sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_16sf->Location = System::Drawing::Point(449, 120);
+			this->textBox_calc_16sf->Location = System::Drawing::Point(823, 222);
+			this->textBox_calc_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_16sf->Name = L"textBox_calc_16sf";
-			this->textBox_calc_16sf->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_16sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16sf->TabIndex = 27;
 			// 
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(8, 58);
+			this->label14->Location = System::Drawing::Point(15, 107);
+			this->label14->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(24, 13);
+			this->label14->Size = System::Drawing::Size(44, 25);
 			this->label14->TabIndex = 18;
 			this->label14->Text = L"x16";
 			// 
 			// label15
 			// 
 			this->label15->AutoSize = true;
-			this->label15->Location = System::Drawing::Point(8, 32);
+			this->label15->Location = System::Drawing::Point(15, 59);
+			this->label15->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(24, 13);
+			this->label15->Size = System::Drawing::Size(44, 25);
 			this->label15->TabIndex = 17;
 			this->label15->Text = L"x10";
 			// 
 			// textBox_calc_16ui
 			// 
 			this->textBox_calc_16ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_16ui->Location = System::Drawing::Point(37, 120);
+			this->textBox_calc_16ui->Location = System::Drawing::Point(68, 222);
+			this->textBox_calc_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_16ui->Name = L"textBox_calc_16ui";
-			this->textBox_calc_16ui->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_16ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16ui->TabIndex = 26;
 			// 
 			// label12
 			// 
 			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(315, 78);
+			this->label12->Location = System::Drawing::Point(578, 144);
+			this->label12->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(52, 13);
+			this->label12->Size = System::Drawing::Size(95, 25);
 			this->label12->TabIndex = 22;
 			this->label12->Text = L"signed int";
 			// 
 			// textBox_calc_16si
 			// 
 			this->textBox_calc_16si->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_16si->Location = System::Drawing::Point(243, 120);
+			this->textBox_calc_16si->Location = System::Drawing::Point(446, 222);
+			this->textBox_calc_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_16si->Name = L"textBox_calc_16si";
-			this->textBox_calc_16si->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_16si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16si->TabIndex = 25;
 			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(105, 78);
+			this->label13->Location = System::Drawing::Point(193, 144);
+			this->label13->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(64, 13);
+			this->label13->Size = System::Drawing::Size(117, 25);
 			this->label13->TabIndex = 20;
 			this->label13->Text = L"unsigned int";
 			// 
 			// textBox_calc_10ui
 			// 
 			this->textBox_calc_10ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_10ui->Location = System::Drawing::Point(37, 94);
+			this->textBox_calc_10ui->Location = System::Drawing::Point(68, 174);
+			this->textBox_calc_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_10ui->Name = L"textBox_calc_10ui";
-			this->textBox_calc_10ui->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_10ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10ui->TabIndex = 21;
 			// 
 			// textBox_calc_10sf
 			// 
 			this->textBox_calc_10sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_10sf->Location = System::Drawing::Point(449, 94);
+			this->textBox_calc_10sf->Location = System::Drawing::Point(823, 174);
+			this->textBox_calc_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_10sf->Name = L"textBox_calc_10sf";
-			this->textBox_calc_10sf->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_10sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10sf->TabIndex = 23;
 			// 
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(521, 78);
+			this->label11->Location = System::Drawing::Point(955, 144);
+			this->label11->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(61, 13);
+			this->label11->Size = System::Drawing::Size(111, 25);
 			this->label11->TabIndex = 24;
 			this->label11->Text = L"signed float";
 			// 
 			// textBox_calc_10si
 			// 
 			this->textBox_calc_10si->BackColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox_calc_10si->Location = System::Drawing::Point(243, 94);
+			this->textBox_calc_10si->Location = System::Drawing::Point(446, 174);
+			this->textBox_calc_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_calc_10si->Name = L"textBox_calc_10si";
-			this->textBox_calc_10si->Size = System::Drawing::Size(200, 20);
+			this->textBox_calc_10si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10si->TabIndex = 19;
 			// 
 			// groupBox2
@@ -658,9 +699,11 @@ namespace Project1 {
 			this->groupBox2->Controls->Add(this->textBox_idap);
 			this->groupBox2->Controls->Add(this->textBox_codem);
 			this->groupBox2->Controls->Add(this->textBox_codep);
-			this->groupBox2->Location = System::Drawing::Point(15, 144);
+			this->groupBox2->Location = System::Drawing::Point(28, 266);
+			this->groupBox2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(661, 123);
+			this->groupBox2->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox2->Size = System::Drawing::Size(1212, 227);
 			this->groupBox2->TabIndex = 31;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"[ pattern converter ]";
@@ -668,71 +711,79 @@ namespace Project1 {
 			// label25
 			// 
 			this->label25->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label25->Location = System::Drawing::Point(6, 55);
+			this->label25->Location = System::Drawing::Point(11, 102);
+			this->label25->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(649, 2);
+			this->label25->Size = System::Drawing::Size(1190, 4);
 			this->label25->TabIndex = 39;
 			// 
 			// label_size
 			// 
 			this->label_size->AutoSize = true;
-			this->label_size->Location = System::Drawing::Point(591, 92);
+			this->label_size->Location = System::Drawing::Point(1084, 170);
+			this->label_size->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label_size->Name = L"label_size";
-			this->label_size->Size = System::Drawing::Size(28, 13);
+			this->label_size->Size = System::Drawing::Size(53, 25);
 			this->label_size->TabIndex = 41;
 			this->label_size->Text = L"size:";
 			// 
 			// label18
 			// 
 			this->label18->AutoSize = true;
-			this->label18->Location = System::Drawing::Point(6, 31);
+			this->label18->Location = System::Drawing::Point(11, 57);
+			this->label18->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(57, 13);
+			this->label18->Size = System::Drawing::Size(103, 25);
 			this->label18->TabIndex = 40;
 			this->label18->Text = L"ida pattern";
 			// 
 			// label17
 			// 
 			this->label17->AutoSize = true;
-			this->label17->Location = System::Drawing::Point(6, 92);
+			this->label17->Location = System::Drawing::Point(11, 170);
+			this->label17->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(59, 13);
+			this->label17->Size = System::Drawing::Size(107, 25);
 			this->label17->TabIndex = 39;
 			this->label17->Text = L"code mask";
 			// 
 			// label16
 			// 
 			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(6, 66);
+			this->label16->Location = System::Drawing::Point(11, 122);
+			this->label16->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(67, 13);
+			this->label16->Size = System::Drawing::Size(120, 25);
 			this->label16->TabIndex = 38;
 			this->label16->Text = L"code pattern";
 			// 
 			// textBox_idap
 			// 
 			this->textBox_idap->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_idap->Location = System::Drawing::Point(79, 28);
+			this->textBox_idap->Location = System::Drawing::Point(145, 52);
+			this->textBox_idap->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_idap->Name = L"textBox_idap";
-			this->textBox_idap->Size = System::Drawing::Size(570, 20);
+			this->textBox_idap->Size = System::Drawing::Size(1042, 29);
 			this->textBox_idap->TabIndex = 37;
 			this->textBox_idap->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_idap_TextChanged);
 			// 
 			// textBox_codem
 			// 
 			this->textBox_codem->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_codem->Location = System::Drawing::Point(79, 89);
+			this->textBox_codem->Location = System::Drawing::Point(145, 164);
+			this->textBox_codem->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_codem->Name = L"textBox_codem";
-			this->textBox_codem->Size = System::Drawing::Size(507, 20);
+			this->textBox_codem->Size = System::Drawing::Size(926, 29);
 			this->textBox_codem->TabIndex = 36;
 			this->textBox_codem->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_codem_TextChanged);
 			// 
 			// textBox_codep
 			// 
 			this->textBox_codep->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_codep->Location = System::Drawing::Point(79, 63);
+			this->textBox_codep->Location = System::Drawing::Point(145, 116);
+			this->textBox_codep->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_codep->Name = L"textBox_codep";
-			this->textBox_codep->Size = System::Drawing::Size(570, 20);
+			this->textBox_codep->Size = System::Drawing::Size(1042, 29);
 			this->textBox_codep->TabIndex = 36;
 			this->textBox_codep->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_codep_TextChanged);
 			// 
@@ -740,18 +791,20 @@ namespace Project1 {
 			// 
 			this->comboBox_calc_bits->FormattingEnabled = true;
 			this->comboBox_calc_bits->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"64", L"32" });
-			this->comboBox_calc_bits->Location = System::Drawing::Point(555, 318);
+			this->comboBox_calc_bits->Location = System::Drawing::Point(1018, 587);
+			this->comboBox_calc_bits->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->comboBox_calc_bits->Name = L"comboBox_calc_bits";
-			this->comboBox_calc_bits->Size = System::Drawing::Size(121, 21);
+			this->comboBox_calc_bits->Size = System::Drawing::Size(219, 32);
 			this->comboBox_calc_bits->TabIndex = 32;
 			this->comboBox_calc_bits->Text = L"64";
 			// 
 			// label19
 			// 
 			this->label19->AutoSize = true;
-			this->label19->Location = System::Drawing::Point(526, 321);
+			this->label19->Location = System::Drawing::Point(964, 593);
+			this->label19->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(23, 13);
+			this->label19->Size = System::Drawing::Size(42, 25);
 			this->label19->TabIndex = 36;
 			this->label19->Text = L"bits";
 			// 
@@ -766,9 +819,11 @@ namespace Project1 {
 			this->groupBox5->Controls->Add(this->label21);
 			this->groupBox5->Controls->Add(this->label23);
 			this->groupBox5->Controls->Add(this->textBox_bit_value1);
-			this->groupBox5->Location = System::Drawing::Point(15, 15);
+			this->groupBox5->Location = System::Drawing::Point(28, 28);
+			this->groupBox5->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(661, 152);
+			this->groupBox5->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox5->Size = System::Drawing::Size(1212, 281);
 			this->groupBox5->TabIndex = 37;
 			this->groupBox5->TabStop = false;
 			this->groupBox5->Text = L"[ bit - calculator/converter ]";
@@ -776,17 +831,19 @@ namespace Project1 {
 			// label28
 			// 
 			this->label28->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label28->Location = System::Drawing::Point(6, 56);
+			this->label28->Location = System::Drawing::Point(11, 103);
+			this->label28->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(649, 2);
+			this->label28->Size = System::Drawing::Size(1190, 4);
 			this->label28->TabIndex = 46;
 			// 
 			// label38
 			// 
 			this->label38->AutoSize = true;
-			this->label38->Location = System::Drawing::Point(475, 120);
+			this->label38->Location = System::Drawing::Point(871, 222);
+			this->label38->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label38->Name = L"label38";
-			this->label38->Size = System::Drawing::Size(47, 13);
+			this->label38->Size = System::Drawing::Size(87, 25);
 			this->label38->TabIndex = 44;
 			this->label38->Text = L"bits style";
 			// 
@@ -795,62 +852,69 @@ namespace Project1 {
 			this->comboBox_bit_style->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"(1 << * )", L"0x****" });
 			this->comboBox_bit_style->FormattingEnabled = true;
 			this->comboBox_bit_style->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"(1 << * )", L"0x****" });
-			this->comboBox_bit_style->Location = System::Drawing::Point(528, 117);
+			this->comboBox_bit_style->Location = System::Drawing::Point(968, 216);
+			this->comboBox_bit_style->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->comboBox_bit_style->Name = L"comboBox_bit_style";
-			this->comboBox_bit_style->Size = System::Drawing::Size(121, 21);
+			this->comboBox_bit_style->Size = System::Drawing::Size(219, 32);
 			this->comboBox_bit_style->TabIndex = 43;
 			// 
 			// textBox_bit_value3
 			// 
 			this->textBox_bit_value3->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_bit_value3->Location = System::Drawing::Point(47, 91);
+			this->textBox_bit_value3->Location = System::Drawing::Point(86, 168);
+			this->textBox_bit_value3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_bit_value3->Name = L"textBox_bit_value3";
-			this->textBox_bit_value3->Size = System::Drawing::Size(602, 20);
+			this->textBox_bit_value3->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value3->TabIndex = 41;
 			this->textBox_bit_value3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_bit_value3_TextChanged);
 			// 
 			// label37
 			// 
 			this->label37->AutoSize = true;
-			this->label37->Location = System::Drawing::Point(6, 94);
+			this->label37->Location = System::Drawing::Point(11, 174);
+			this->label37->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(38, 13);
+			this->label37->Size = System::Drawing::Size(72, 25);
 			this->label37->TabIndex = 42;
 			this->label37->Text = L"bits &&=";
 			// 
 			// textBox_bit_value2
 			// 
 			this->textBox_bit_value2->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_bit_value2->Location = System::Drawing::Point(47, 65);
+			this->textBox_bit_value2->Location = System::Drawing::Point(86, 120);
+			this->textBox_bit_value2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_bit_value2->Name = L"textBox_bit_value2";
-			this->textBox_bit_value2->Size = System::Drawing::Size(602, 20);
+			this->textBox_bit_value2->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value2->TabIndex = 36;
 			this->textBox_bit_value2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_bit_value2_TextChanged);
 			// 
 			// label21
 			// 
 			this->label21->AutoSize = true;
-			this->label21->Location = System::Drawing::Point(6, 32);
+			this->label21->Location = System::Drawing::Point(11, 59);
+			this->label21->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(27, 13);
+			this->label21->Size = System::Drawing::Size(50, 25);
 			this->label21->TabIndex = 40;
 			this->label21->Text = L"num";
 			// 
 			// label23
 			// 
 			this->label23->AutoSize = true;
-			this->label23->Location = System::Drawing::Point(6, 68);
+			this->label23->Location = System::Drawing::Point(11, 126);
+			this->label23->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(34, 13);
+			this->label23->Size = System::Drawing::Size(64, 25);
 			this->label23->TabIndex = 38;
 			this->label23->Text = L"bits |=";
 			// 
 			// textBox_bit_value1
 			// 
 			this->textBox_bit_value1->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_bit_value1->Location = System::Drawing::Point(47, 29);
+			this->textBox_bit_value1->Location = System::Drawing::Point(86, 54);
+			this->textBox_bit_value1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_bit_value1->Name = L"textBox_bit_value1";
-			this->textBox_bit_value1->Size = System::Drawing::Size(602, 20);
+			this->textBox_bit_value1->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value1->TabIndex = 37;
 			this->textBox_bit_value1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_bit_value1_TextChanged);
 			// 
@@ -860,10 +924,11 @@ namespace Project1 {
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
 			this->tabControl1->Controls->Add(this->tabPage4);
-			this->tabControl1->Location = System::Drawing::Point(318, 25);
+			this->tabControl1->Location = System::Drawing::Point(583, 46);
+			this->tabControl1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(699, 601);
+			this->tabControl1->Size = System::Drawing::Size(1282, 1110);
 			this->tabControl1->TabIndex = 38;
 			// 
 			// tabPage1
@@ -872,10 +937,11 @@ namespace Project1 {
 			this->tabPage1->Controls->Add(this->groupBox3);
 			this->tabPage1->Controls->Add(this->label19);
 			this->tabPage1->Controls->Add(this->comboBox_calc_bits);
-			this->tabPage1->Location = System::Drawing::Point(4, 22);
+			this->tabPage1->Location = System::Drawing::Point(4, 33);
+			this->tabPage1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(691, 575);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage1->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Page1";
 			this->tabPage1->UseVisualStyleBackColor = true;
@@ -884,10 +950,11 @@ namespace Project1 {
 			// 
 			this->tabPage2->Controls->Add(this->groupBox8);
 			this->tabPage2->Controls->Add(this->groupBox5);
-			this->tabPage2->Location = System::Drawing::Point(4, 22);
+			this->tabPage2->Location = System::Drawing::Point(4, 33);
+			this->tabPage2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(691, 575);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage2->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Page2";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -908,9 +975,11 @@ namespace Project1 {
 			this->groupBox8->Controls->Add(this->label30);
 			this->groupBox8->Controls->Add(this->label31);
 			this->groupBox8->Controls->Add(this->textBox_byte_value_10ui);
-			this->groupBox8->Location = System::Drawing::Point(15, 173);
+			this->groupBox8->Location = System::Drawing::Point(28, 319);
+			this->groupBox8->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox8->Name = L"groupBox8";
-			this->groupBox8->Size = System::Drawing::Size(661, 134);
+			this->groupBox8->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox8->Size = System::Drawing::Size(1212, 247);
 			this->groupBox8->TabIndex = 41;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"[ byte - calculator/converter ]";
@@ -918,125 +987,139 @@ namespace Project1 {
 			// label35
 			// 
 			this->label35->AutoSize = true;
-			this->label35->Location = System::Drawing::Point(9, 69);
+			this->label35->Location = System::Drawing::Point(17, 127);
+			this->label35->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label35->Name = L"label35";
-			this->label35->Size = System::Drawing::Size(24, 13);
+			this->label35->Size = System::Drawing::Size(44, 25);
 			this->label35->TabIndex = 55;
 			this->label35->Text = L"x64";
 			// 
 			// label36
 			// 
 			this->label36->AutoSize = true;
-			this->label36->Location = System::Drawing::Point(9, 43);
+			this->label36->Location = System::Drawing::Point(17, 79);
+			this->label36->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label36->Name = L"label36";
-			this->label36->Size = System::Drawing::Size(24, 13);
+			this->label36->Size = System::Drawing::Size(44, 25);
 			this->label36->TabIndex = 54;
 			this->label36->Text = L"x32";
 			// 
 			// textBox_byte_value_16sf
 			// 
 			this->textBox_byte_value_16sf->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16sf->Location = System::Drawing::Point(452, 66);
+			this->textBox_byte_value_16sf->Location = System::Drawing::Point(829, 122);
+			this->textBox_byte_value_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_16sf->Name = L"textBox_byte_value_16sf";
-			this->textBox_byte_value_16sf->Size = System::Drawing::Size(197, 20);
+			this->textBox_byte_value_16sf->Size = System::Drawing::Size(358, 29);
 			this->textBox_byte_value_16sf->TabIndex = 53;
 			this->textBox_byte_value_16sf->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16sf_TextChanged);
 			// 
 			// textBox_byte_value_16si
 			// 
 			this->textBox_byte_value_16si->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16si->Location = System::Drawing::Point(249, 66);
+			this->textBox_byte_value_16si->Location = System::Drawing::Point(457, 122);
+			this->textBox_byte_value_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_16si->Name = L"textBox_byte_value_16si";
-			this->textBox_byte_value_16si->Size = System::Drawing::Size(197, 20);
+			this->textBox_byte_value_16si->Size = System::Drawing::Size(358, 29);
 			this->textBox_byte_value_16si->TabIndex = 52;
 			this->textBox_byte_value_16si->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16si_TextChanged);
 			// 
 			// textBox_byte_value_16ui
 			// 
 			this->textBox_byte_value_16ui->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16ui->Location = System::Drawing::Point(39, 66);
+			this->textBox_byte_value_16ui->Location = System::Drawing::Point(72, 122);
+			this->textBox_byte_value_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_16ui->Name = L"textBox_byte_value_16ui";
-			this->textBox_byte_value_16ui->Size = System::Drawing::Size(204, 20);
+			this->textBox_byte_value_16ui->Size = System::Drawing::Size(371, 29);
 			this->textBox_byte_value_16ui->TabIndex = 51;
 			this->textBox_byte_value_16ui->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16ui_TextChanged);
 			// 
 			// label34
 			// 
 			this->label34->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label34->Location = System::Drawing::Point(6, 93);
+			this->label34->Location = System::Drawing::Point(11, 172);
+			this->label34->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(649, 2);
+			this->label34->Size = System::Drawing::Size(1190, 4);
 			this->label34->TabIndex = 45;
 			// 
 			// label33
 			// 
 			this->label33->AutoSize = true;
-			this->label33->Location = System::Drawing::Point(522, 24);
+			this->label33->Location = System::Drawing::Point(957, 44);
+			this->label33->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label33->Name = L"label33";
-			this->label33->Size = System::Drawing::Size(61, 13);
+			this->label33->Size = System::Drawing::Size(111, 25);
 			this->label33->TabIndex = 44;
 			this->label33->Text = L"signed float";
 			// 
 			// textBox_byte_value_10sf
 			// 
 			this->textBox_byte_value_10sf->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10sf->Location = System::Drawing::Point(452, 40);
+			this->textBox_byte_value_10sf->Location = System::Drawing::Point(829, 74);
+			this->textBox_byte_value_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_10sf->Name = L"textBox_byte_value_10sf";
-			this->textBox_byte_value_10sf->Size = System::Drawing::Size(197, 20);
+			this->textBox_byte_value_10sf->Size = System::Drawing::Size(358, 29);
 			this->textBox_byte_value_10sf->TabIndex = 43;
 			this->textBox_byte_value_10sf->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10sf_TextChanged);
 			// 
 			// label32
 			// 
 			this->label32->AutoSize = true;
-			this->label32->Location = System::Drawing::Point(322, 24);
+			this->label32->Location = System::Drawing::Point(590, 44);
+			this->label32->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label32->Name = L"label32";
-			this->label32->Size = System::Drawing::Size(52, 13);
+			this->label32->Size = System::Drawing::Size(95, 25);
 			this->label32->TabIndex = 42;
 			this->label32->Text = L"signed int";
 			// 
 			// textBox_byte_value_10si
 			// 
 			this->textBox_byte_value_10si->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10si->Location = System::Drawing::Point(249, 40);
+			this->textBox_byte_value_10si->Location = System::Drawing::Point(457, 74);
+			this->textBox_byte_value_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_10si->Name = L"textBox_byte_value_10si";
-			this->textBox_byte_value_10si->Size = System::Drawing::Size(197, 20);
+			this->textBox_byte_value_10si->Size = System::Drawing::Size(358, 29);
 			this->textBox_byte_value_10si->TabIndex = 41;
 			this->textBox_byte_value_10si->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10si_TextChanged);
 			// 
 			// textBox_byte_value
 			// 
 			this->textBox_byte_value->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value->Location = System::Drawing::Point(39, 101);
+			this->textBox_byte_value->Location = System::Drawing::Point(72, 186);
+			this->textBox_byte_value->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value->Name = L"textBox_byte_value";
-			this->textBox_byte_value->Size = System::Drawing::Size(610, 20);
+			this->textBox_byte_value->Size = System::Drawing::Size(1115, 29);
 			this->textBox_byte_value->TabIndex = 36;
 			this->textBox_byte_value->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_TextChanged);
 			// 
 			// label30
 			// 
 			this->label30->AutoSize = true;
-			this->label30->Location = System::Drawing::Point(110, 24);
+			this->label30->Location = System::Drawing::Point(202, 44);
+			this->label30->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(64, 13);
+			this->label30->Size = System::Drawing::Size(117, 25);
 			this->label30->TabIndex = 40;
 			this->label30->Text = L"unsigned int";
 			// 
 			// label31
 			// 
 			this->label31->AutoSize = true;
-			this->label31->Location = System::Drawing::Point(6, 103);
+			this->label31->Location = System::Drawing::Point(11, 190);
+			this->label31->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label31->Name = L"label31";
-			this->label31->Size = System::Drawing::Size(32, 13);
+			this->label31->Size = System::Drawing::Size(59, 25);
 			this->label31->TabIndex = 38;
 			this->label31->Text = L"bytes";
 			// 
 			// textBox_byte_value_10ui
 			// 
 			this->textBox_byte_value_10ui->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10ui->Location = System::Drawing::Point(39, 40);
+			this->textBox_byte_value_10ui->Location = System::Drawing::Point(72, 74);
+			this->textBox_byte_value_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->textBox_byte_value_10ui->Name = L"textBox_byte_value_10ui";
-			this->textBox_byte_value_10ui->Size = System::Drawing::Size(204, 20);
+			this->textBox_byte_value_10ui->Size = System::Drawing::Size(371, 29);
 			this->textBox_byte_value_10ui->TabIndex = 37;
 			this->textBox_byte_value_10ui->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10ui_TextChanged);
 			// 
@@ -1044,9 +1127,10 @@ namespace Project1 {
 			// 
 			this->tabPage3->Controls->Add(this->groupBox1);
 			this->tabPage3->Controls->Add(this->groupBox2);
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Location = System::Drawing::Point(4, 33);
+			this->tabPage3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Size = System::Drawing::Size(691, 575);
+			this->tabPage3->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Page3";
 			this->tabPage3->UseVisualStyleBackColor = true;
@@ -1055,18 +1139,21 @@ namespace Project1 {
 			// 
 			this->tabPage4->Controls->Add(this->groupBox7);
 			this->tabPage4->Controls->Add(this->groupBox6);
-			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Location = System::Drawing::Point(4, 33);
+			this->tabPage4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Size = System::Drawing::Size(691, 575);
+			this->tabPage4->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Settings";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// groupBox7
 			// 
-			this->groupBox7->Location = System::Drawing::Point(352, 15);
+			this->groupBox7->Location = System::Drawing::Point(645, 28);
+			this->groupBox7->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox7->Name = L"groupBox7";
-			this->groupBox7->Size = System::Drawing::Size(322, 544);
+			this->groupBox7->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox7->Size = System::Drawing::Size(590, 1004);
 			this->groupBox7->TabIndex = 42;
 			this->groupBox7->TabStop = false;
 			this->groupBox7->Text = L"[ group ]";
@@ -1075,9 +1162,11 @@ namespace Project1 {
 			// 
 			this->groupBox6->Controls->Add(this->comboBox_settings_hexstyle);
 			this->groupBox6->Controls->Add(this->label27);
-			this->groupBox6->Location = System::Drawing::Point(15, 15);
+			this->groupBox6->Location = System::Drawing::Point(28, 28);
+			this->groupBox6->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Size = System::Drawing::Size(322, 544);
+			this->groupBox6->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox6->Size = System::Drawing::Size(590, 1004);
 			this->groupBox6->TabIndex = 41;
 			this->groupBox6->TabStop = false;
 			this->groupBox6->Text = L"[ register style ]";
@@ -1086,31 +1175,34 @@ namespace Project1 {
 			// 
 			this->comboBox_settings_hexstyle->FormattingEnabled = true;
 			this->comboBox_settings_hexstyle->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"uppercase", L"lowercase" });
-			this->comboBox_settings_hexstyle->Location = System::Drawing::Point(165, 28);
+			this->comboBox_settings_hexstyle->Location = System::Drawing::Point(303, 52);
+			this->comboBox_settings_hexstyle->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->comboBox_settings_hexstyle->Name = L"comboBox_settings_hexstyle";
-			this->comboBox_settings_hexstyle->Size = System::Drawing::Size(142, 21);
+			this->comboBox_settings_hexstyle->Size = System::Drawing::Size(257, 32);
 			this->comboBox_settings_hexstyle->TabIndex = 0;
 			// 
 			// label27
 			// 
 			this->label27->AutoSize = true;
-			this->label27->Location = System::Drawing::Point(6, 31);
+			this->label27->Location = System::Drawing::Point(11, 57);
+			this->label27->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(48, 13);
+			this->label27->Size = System::Drawing::Size(89, 25);
 			this->label27->TabIndex = 36;
 			this->label27->Text = L"hex style";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(11, 24);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->ClientSize = System::Drawing::Size(1026, 638);
+			this->ClientSize = System::Drawing::Size(1866, 1132);
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->label_notepad);
 			this->Controls->Add(this->richTextBox_notepad);
+			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->MaximizeBox = false;
-			this->MaximumSize = System::Drawing::Size(1042, 677);
+			this->MaximumSize = System::Drawing::Size(1890, 1196);
 			this->Name = L"MyForm";
 			this->ShowIcon = false;
 			this->Text = L"Reversed Data Converter (by NiceL)";
