@@ -6,7 +6,6 @@ using namespace System::Windows::Forms;
 [STAThread]
 
 
-
 void main(array<String^>^ args) 
 {
 	SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_SYSTEM_AWARE);

@@ -109,21 +109,46 @@ namespace Project1 {
 	private: System::Windows::Forms::TextBox^ textBox_byte_value;
 	private: System::Windows::Forms::Label^ label30;
 	private: System::Windows::Forms::Label^ label31;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_10ui;
+	private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32;
+
 	private: System::Windows::Forms::Label^ label34;
 	private: System::Windows::Forms::Label^ label33;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_10sf;
+	private: System::Windows::Forms::TextBox^ textBox_byte_value_sf_32;
+
 	private: System::Windows::Forms::Label^ label32;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_10si;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_16sf;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_16si;
-	private: System::Windows::Forms::TextBox^ textBox_byte_value_16ui;
+	private: System::Windows::Forms::TextBox^ textBox_byte_value_si_32;
+
+	private: System::Windows::Forms::TextBox^ textBox_byte_value_sf_64;
+private: System::Windows::Forms::TextBox^ textBox_byte_value_si_64;
+private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_64;
+
+
+
 	private: System::Windows::Forms::Label^ label35;
 	private: System::Windows::Forms::Label^ label36;
 	private: System::Windows::Forms::TextBox^ textBox_bit_value3;
 	private: System::Windows::Forms::Label^ label37;
 	private: System::Windows::Forms::Label^ label38;
 	private: System::Windows::Forms::ComboBox^ comboBox_bit_style;
+private: System::Windows::Forms::GroupBox^ groupBox9;
+private: System::Windows::Forms::Label^ label29;
+private: System::Windows::Forms::Label^ label40;
+private: System::Windows::Forms::Label^ label42;
+private: System::Windows::Forms::TextBox^ textBox_str_for_byte_value;
+private: System::Windows::Forms::TextBox^ textBox_byte_from_str_value;
+private: System::Windows::Forms::Label^ label39;
+private: System::Windows::Forms::Label^ label41;
+private: System::Windows::Forms::TextBox^ textBox_bytes;
+private: System::Windows::Forms::Label^ label43;
+private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_64_hex;
+
+private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^ label28;
 
 	private:
@@ -139,7 +164,6 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->richTextBox_notepad = (gcnew System::Windows::Forms::RichTextBox());
 			this->label_notepad = (gcnew System::Windows::Forms::Label());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
@@ -183,6 +207,9 @@ namespace Project1 {
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->textBox_calc_10si = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label39 = (gcnew System::Windows::Forms::Label());
+			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->textBox_bytes = (gcnew System::Windows::Forms::TextBox());
 			this->label25 = (gcnew System::Windows::Forms::Label());
 			this->label_size = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
@@ -207,21 +234,30 @@ namespace Project1 {
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->label43 = (gcnew System::Windows::Forms::Label());
+			this->textBox_byte_value_ui_64_hex = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_ui_32_hex = (gcnew System::Windows::Forms::TextBox());
 			this->label35 = (gcnew System::Windows::Forms::Label());
 			this->label36 = (gcnew System::Windows::Forms::Label());
-			this->textBox_byte_value_16sf = (gcnew System::Windows::Forms::TextBox());
-			this->textBox_byte_value_16si = (gcnew System::Windows::Forms::TextBox());
-			this->textBox_byte_value_16ui = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_sf_64 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_si_64 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_ui_64 = (gcnew System::Windows::Forms::TextBox());
 			this->label34 = (gcnew System::Windows::Forms::Label());
 			this->label33 = (gcnew System::Windows::Forms::Label());
-			this->textBox_byte_value_10sf = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_sf_32 = (gcnew System::Windows::Forms::TextBox());
 			this->label32 = (gcnew System::Windows::Forms::Label());
-			this->textBox_byte_value_10si = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_si_32 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox_byte_value = (gcnew System::Windows::Forms::TextBox());
 			this->label30 = (gcnew System::Windows::Forms::Label());
 			this->label31 = (gcnew System::Windows::Forms::Label());
-			this->textBox_byte_value_10ui = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_value_ui_32 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->groupBox9 = (gcnew System::Windows::Forms::GroupBox());
+			this->label29 = (gcnew System::Windows::Forms::Label());
+			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->textBox_str_for_byte_value = (gcnew System::Windows::Forms::TextBox());
+			this->textBox_byte_from_str_value = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox6 = (gcnew System::Windows::Forms::GroupBox());
@@ -237,6 +273,7 @@ namespace Project1 {
 			this->tabPage2->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->tabPage3->SuspendLayout();
+			this->groupBox9->SuspendLayout();
 			this->tabPage4->SuspendLayout();
 			this->groupBox6->SuspendLayout();
 			this->SuspendLayout();
@@ -244,13 +281,16 @@ namespace Project1 {
 			// richTextBox_notepad
 			// 
 			this->richTextBox_notepad->BackColor = System::Drawing::SystemColors::Window;
+			this->richTextBox_notepad->DetectUrls = false;
 			this->richTextBox_notepad->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->richTextBox_notepad->Location = System::Drawing::Point(22, 46);
-			this->richTextBox_notepad->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->richTextBox_notepad->Margin = System::Windows::Forms::Padding(6);
 			this->richTextBox_notepad->Name = L"richTextBox_notepad";
 			this->richTextBox_notepad->Size = System::Drawing::Size(547, 1104);
 			this->richTextBox_notepad->TabIndex = 1;
 			this->richTextBox_notepad->Text = L"";
+			this->richTextBox_notepad->SelectionChanged += gcnew System::EventHandler(this, &MyForm::richTextBox_notepad_SelectionChanged);
+			this->richTextBox_notepad->TextChanged += gcnew System::EventHandler(this, &MyForm::richTextBox_notepad_TextChanged);
 			// 
 			// label_notepad
 			// 
@@ -280,9 +320,9 @@ namespace Project1 {
 			this->groupBox3->Controls->Add(this->textBox_calc2_10si);
 			this->groupBox3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->groupBox3->Location = System::Drawing::Point(28, 323);
-			this->groupBox3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox3->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox3->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox3->Size = System::Drawing::Size(1212, 253);
 			this->groupBox3->TabIndex = 29;
 			this->groupBox3->TabStop = false;
@@ -316,7 +356,7 @@ namespace Project1 {
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(44, 25);
 			this->label5->TabIndex = 32;
-			this->label5->Text = L"x16";
+			this->label5->Text = L"hex";
 			// 
 			// label1
 			// 
@@ -336,7 +376,7 @@ namespace Project1 {
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(44, 25);
 			this->label6->TabIndex = 31;
-			this->label6->Text = L"x10";
+			this->label6->Text = L"dec";
 			// 
 			// label4
 			// 
@@ -362,7 +402,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_16sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_16sf->Location = System::Drawing::Point(823, 190);
-			this->textBox_calc2_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_16sf->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_16sf->Name = L"textBox_calc2_16sf";
 			this->textBox_calc2_16sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16sf->TabIndex = 27;
@@ -371,7 +411,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_enter->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_calc2_enter->Location = System::Drawing::Point(68, 70);
-			this->textBox_calc2_enter->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_enter->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_enter->Name = L"textBox_calc2_enter";
 			this->textBox_calc2_enter->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc2_enter->TabIndex = 28;
@@ -381,7 +421,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_16ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_16ui->Location = System::Drawing::Point(68, 190);
-			this->textBox_calc2_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_16ui->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_16ui->Name = L"textBox_calc2_16ui";
 			this->textBox_calc2_16ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16ui->TabIndex = 26;
@@ -390,7 +430,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_16si->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_16si->Location = System::Drawing::Point(446, 190);
-			this->textBox_calc2_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_16si->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_16si->Name = L"textBox_calc2_16si";
 			this->textBox_calc2_16si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_16si->TabIndex = 25;
@@ -399,7 +439,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_10sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_10sf->Location = System::Drawing::Point(823, 142);
-			this->textBox_calc2_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_10sf->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_10sf->Name = L"textBox_calc2_10sf";
 			this->textBox_calc2_10sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10sf->TabIndex = 23;
@@ -408,7 +448,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_10ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_10ui->Location = System::Drawing::Point(68, 142);
-			this->textBox_calc2_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_10ui->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_10ui->Name = L"textBox_calc2_10ui";
 			this->textBox_calc2_10ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10ui->TabIndex = 21;
@@ -417,7 +457,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc2_10si->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc2_10si->Location = System::Drawing::Point(446, 142);
-			this->textBox_calc2_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc2_10si->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc2_10si->Name = L"textBox_calc2_10si";
 			this->textBox_calc2_10si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc2_10si->TabIndex = 19;
@@ -432,9 +472,9 @@ namespace Project1 {
 			this->groupBox1->Controls->Add(this->textBox_lc);
 			this->groupBox1->Controls->Add(this->textBox_uc);
 			this->groupBox1->Location = System::Drawing::Point(28, 28);
-			this->groupBox1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox1->Size = System::Drawing::Size(1212, 227);
 			this->groupBox1->TabIndex = 30;
 			this->groupBox1->TabStop = false;
@@ -473,7 +513,7 @@ namespace Project1 {
 			// 
 			this->textBox_rvalue->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_rvalue->Location = System::Drawing::Point(145, 54);
-			this->textBox_rvalue->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_rvalue->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_rvalue->Name = L"textBox_rvalue";
 			this->textBox_rvalue->Size = System::Drawing::Size(1042, 29);
 			this->textBox_rvalue->TabIndex = 30;
@@ -493,7 +533,7 @@ namespace Project1 {
 			// 
 			this->textBox_lc->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_lc->Location = System::Drawing::Point(145, 166);
-			this->textBox_lc->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_lc->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_lc->Name = L"textBox_lc";
 			this->textBox_lc->Size = System::Drawing::Size(1042, 29);
 			this->textBox_lc->TabIndex = 27;
@@ -502,7 +542,7 @@ namespace Project1 {
 			// 
 			this->textBox_uc->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_uc->Location = System::Drawing::Point(145, 118);
-			this->textBox_uc->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_uc->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_uc->Name = L"textBox_uc";
 			this->textBox_uc->Size = System::Drawing::Size(1042, 29);
 			this->textBox_uc->TabIndex = 22;
@@ -527,9 +567,9 @@ namespace Project1 {
 			this->groupBox4->Controls->Add(this->textBox_calc_10si);
 			this->groupBox4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->groupBox4->Location = System::Drawing::Point(28, 28);
-			this->groupBox4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox4->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox4->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox4->Size = System::Drawing::Size(1212, 284);
 			this->groupBox4->TabIndex = 30;
 			this->groupBox4->TabStop = false;
@@ -543,7 +583,7 @@ namespace Project1 {
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(44, 25);
 			this->label20->TabIndex = 37;
-			this->label20->Text = L"x16";
+			this->label20->Text = L"hex";
 			// 
 			// label22
 			// 
@@ -553,7 +593,7 @@ namespace Project1 {
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(44, 25);
 			this->label22->TabIndex = 36;
-			this->label22->Text = L"x10";
+			this->label22->Text = L"dec";
 			// 
 			// label10
 			// 
@@ -569,7 +609,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_enter_x16->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_calc_enter_x16->Location = System::Drawing::Point(68, 102);
-			this->textBox_calc_enter_x16->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_enter_x16->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_enter_x16->Name = L"textBox_calc_enter_x16";
 			this->textBox_calc_enter_x16->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc_enter_x16->TabIndex = 30;
@@ -579,7 +619,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_enter_x10->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_calc_enter_x10->Location = System::Drawing::Point(68, 54);
-			this->textBox_calc_enter_x10->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_enter_x10->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_enter_x10->Name = L"textBox_calc_enter_x10";
 			this->textBox_calc_enter_x10->Size = System::Drawing::Size(1119, 29);
 			this->textBox_calc_enter_x10->TabIndex = 28;
@@ -589,7 +629,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_16sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_16sf->Location = System::Drawing::Point(823, 222);
-			this->textBox_calc_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_16sf->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_16sf->Name = L"textBox_calc_16sf";
 			this->textBox_calc_16sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16sf->TabIndex = 27;
@@ -602,7 +642,7 @@ namespace Project1 {
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(44, 25);
 			this->label14->TabIndex = 18;
-			this->label14->Text = L"x16";
+			this->label14->Text = L"hex";
 			// 
 			// label15
 			// 
@@ -612,13 +652,13 @@ namespace Project1 {
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(44, 25);
 			this->label15->TabIndex = 17;
-			this->label15->Text = L"x10";
+			this->label15->Text = L"dec";
 			// 
 			// textBox_calc_16ui
 			// 
 			this->textBox_calc_16ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_16ui->Location = System::Drawing::Point(68, 222);
-			this->textBox_calc_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_16ui->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_16ui->Name = L"textBox_calc_16ui";
 			this->textBox_calc_16ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16ui->TabIndex = 26;
@@ -637,7 +677,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_16si->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_16si->Location = System::Drawing::Point(446, 222);
-			this->textBox_calc_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_16si->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_16si->Name = L"textBox_calc_16si";
 			this->textBox_calc_16si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_16si->TabIndex = 25;
@@ -656,7 +696,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_10ui->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_10ui->Location = System::Drawing::Point(68, 174);
-			this->textBox_calc_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_10ui->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_10ui->Name = L"textBox_calc_10ui";
 			this->textBox_calc_10ui->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10ui->TabIndex = 21;
@@ -665,7 +705,7 @@ namespace Project1 {
 			// 
 			this->textBox_calc_10sf->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_10sf->Location = System::Drawing::Point(823, 174);
-			this->textBox_calc_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_10sf->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_10sf->Name = L"textBox_calc_10sf";
 			this->textBox_calc_10sf->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10sf->TabIndex = 23;
@@ -684,13 +724,16 @@ namespace Project1 {
 			// 
 			this->textBox_calc_10si->BackColor = System::Drawing::SystemColors::InactiveBorder;
 			this->textBox_calc_10si->Location = System::Drawing::Point(446, 174);
-			this->textBox_calc_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_calc_10si->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_calc_10si->Name = L"textBox_calc_10si";
 			this->textBox_calc_10si->Size = System::Drawing::Size(363, 29);
 			this->textBox_calc_10si->TabIndex = 19;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->label39);
+			this->groupBox2->Controls->Add(this->label41);
+			this->groupBox2->Controls->Add(this->textBox_bytes);
 			this->groupBox2->Controls->Add(this->label25);
 			this->groupBox2->Controls->Add(this->label_size);
 			this->groupBox2->Controls->Add(this->label18);
@@ -700,18 +743,47 @@ namespace Project1 {
 			this->groupBox2->Controls->Add(this->textBox_codem);
 			this->groupBox2->Controls->Add(this->textBox_codep);
 			this->groupBox2->Location = System::Drawing::Point(28, 266);
-			this->groupBox2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox2->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->groupBox2->Size = System::Drawing::Size(1212, 227);
+			this->groupBox2->Padding = System::Windows::Forms::Padding(6);
+			this->groupBox2->Size = System::Drawing::Size(1212, 280);
 			this->groupBox2->TabIndex = 31;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"[ pattern converter ]";
 			// 
+			// label39
+			// 
+			this->label39->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label39->Location = System::Drawing::Point(11, 159);
+			this->label39->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label39->Name = L"label39";
+			this->label39->Size = System::Drawing::Size(1190, 4);
+			this->label39->TabIndex = 43;
+			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Location = System::Drawing::Point(11, 117);
+			this->label41->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(59, 25);
+			this->label41->TabIndex = 44;
+			this->label41->Text = L"bytes";
+			// 
+			// textBox_bytes
+			// 
+			this->textBox_bytes->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_bytes->Location = System::Drawing::Point(145, 112);
+			this->textBox_bytes->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_bytes->Name = L"textBox_bytes";
+			this->textBox_bytes->Size = System::Drawing::Size(1042, 29);
+			this->textBox_bytes->TabIndex = 42;
+			this->textBox_bytes->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_bytes_TextChanged);
+			// 
 			// label25
 			// 
 			this->label25->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label25->Location = System::Drawing::Point(11, 102);
+			this->label25->Location = System::Drawing::Point(11, 99);
 			this->label25->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(1190, 4);
@@ -720,7 +792,7 @@ namespace Project1 {
 			// label_size
 			// 
 			this->label_size->AutoSize = true;
-			this->label_size->Location = System::Drawing::Point(1084, 170);
+			this->label_size->Location = System::Drawing::Point(1084, 227);
 			this->label_size->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label_size->Name = L"label_size";
 			this->label_size->Size = System::Drawing::Size(53, 25);
@@ -740,7 +812,7 @@ namespace Project1 {
 			// label17
 			// 
 			this->label17->AutoSize = true;
-			this->label17->Location = System::Drawing::Point(11, 170);
+			this->label17->Location = System::Drawing::Point(11, 227);
 			this->label17->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(107, 25);
@@ -750,7 +822,7 @@ namespace Project1 {
 			// label16
 			// 
 			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(11, 122);
+			this->label16->Location = System::Drawing::Point(11, 179);
 			this->label16->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(120, 25);
@@ -761,7 +833,7 @@ namespace Project1 {
 			// 
 			this->textBox_idap->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_idap->Location = System::Drawing::Point(145, 52);
-			this->textBox_idap->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_idap->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_idap->Name = L"textBox_idap";
 			this->textBox_idap->Size = System::Drawing::Size(1042, 29);
 			this->textBox_idap->TabIndex = 37;
@@ -770,8 +842,8 @@ namespace Project1 {
 			// textBox_codem
 			// 
 			this->textBox_codem->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_codem->Location = System::Drawing::Point(145, 164);
-			this->textBox_codem->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_codem->Location = System::Drawing::Point(145, 221);
+			this->textBox_codem->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_codem->Name = L"textBox_codem";
 			this->textBox_codem->Size = System::Drawing::Size(926, 29);
 			this->textBox_codem->TabIndex = 36;
@@ -780,8 +852,8 @@ namespace Project1 {
 			// textBox_codep
 			// 
 			this->textBox_codep->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_codep->Location = System::Drawing::Point(145, 116);
-			this->textBox_codep->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_codep->Location = System::Drawing::Point(145, 173);
+			this->textBox_codep->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_codep->Name = L"textBox_codep";
 			this->textBox_codep->Size = System::Drawing::Size(1042, 29);
 			this->textBox_codep->TabIndex = 36;
@@ -792,7 +864,7 @@ namespace Project1 {
 			this->comboBox_calc_bits->FormattingEnabled = true;
 			this->comboBox_calc_bits->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"64", L"32" });
 			this->comboBox_calc_bits->Location = System::Drawing::Point(1018, 587);
-			this->comboBox_calc_bits->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->comboBox_calc_bits->Margin = System::Windows::Forms::Padding(6);
 			this->comboBox_calc_bits->Name = L"comboBox_calc_bits";
 			this->comboBox_calc_bits->Size = System::Drawing::Size(219, 32);
 			this->comboBox_calc_bits->TabIndex = 32;
@@ -820,9 +892,9 @@ namespace Project1 {
 			this->groupBox5->Controls->Add(this->label23);
 			this->groupBox5->Controls->Add(this->textBox_bit_value1);
 			this->groupBox5->Location = System::Drawing::Point(28, 28);
-			this->groupBox5->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox5->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox5->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox5->Size = System::Drawing::Size(1212, 281);
 			this->groupBox5->TabIndex = 37;
 			this->groupBox5->TabStop = false;
@@ -853,7 +925,7 @@ namespace Project1 {
 			this->comboBox_bit_style->FormattingEnabled = true;
 			this->comboBox_bit_style->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"(1 << * )", L"0x****" });
 			this->comboBox_bit_style->Location = System::Drawing::Point(968, 216);
-			this->comboBox_bit_style->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->comboBox_bit_style->Margin = System::Windows::Forms::Padding(6);
 			this->comboBox_bit_style->Name = L"comboBox_bit_style";
 			this->comboBox_bit_style->Size = System::Drawing::Size(219, 32);
 			this->comboBox_bit_style->TabIndex = 43;
@@ -862,7 +934,7 @@ namespace Project1 {
 			// 
 			this->textBox_bit_value3->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_bit_value3->Location = System::Drawing::Point(86, 168);
-			this->textBox_bit_value3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_bit_value3->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_bit_value3->Name = L"textBox_bit_value3";
 			this->textBox_bit_value3->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value3->TabIndex = 41;
@@ -882,7 +954,7 @@ namespace Project1 {
 			// 
 			this->textBox_bit_value2->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_bit_value2->Location = System::Drawing::Point(86, 120);
-			this->textBox_bit_value2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_bit_value2->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_bit_value2->Name = L"textBox_bit_value2";
 			this->textBox_bit_value2->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value2->TabIndex = 36;
@@ -912,7 +984,7 @@ namespace Project1 {
 			// 
 			this->textBox_bit_value1->BackColor = System::Drawing::SystemColors::Window;
 			this->textBox_bit_value1->Location = System::Drawing::Point(86, 54);
-			this->textBox_bit_value1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_bit_value1->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_bit_value1->Name = L"textBox_bit_value1";
 			this->textBox_bit_value1->Size = System::Drawing::Size(1100, 29);
 			this->textBox_bit_value1->TabIndex = 37;
@@ -925,7 +997,7 @@ namespace Project1 {
 			this->tabControl1->Controls->Add(this->tabPage3);
 			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Location = System::Drawing::Point(583, 46);
-			this->tabControl1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabControl1->Margin = System::Windows::Forms::Padding(6);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(1282, 1110);
@@ -938,9 +1010,9 @@ namespace Project1 {
 			this->tabPage1->Controls->Add(this->label19);
 			this->tabPage1->Controls->Add(this->comboBox_calc_bits);
 			this->tabPage1->Location = System::Drawing::Point(4, 33);
-			this->tabPage1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage1->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage1->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Page1";
@@ -951,9 +1023,9 @@ namespace Project1 {
 			this->tabPage2->Controls->Add(this->groupBox8);
 			this->tabPage2->Controls->Add(this->groupBox5);
 			this->tabPage2->Location = System::Drawing::Point(4, 33);
-			this->tabPage2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage2->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage2->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Page2";
@@ -961,28 +1033,61 @@ namespace Project1 {
 			// 
 			// groupBox8
 			// 
+			this->groupBox8->Controls->Add(this->label43);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_ui_64_hex);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_ui_32_hex);
 			this->groupBox8->Controls->Add(this->label35);
 			this->groupBox8->Controls->Add(this->label36);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_16sf);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_16si);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_16ui);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_sf_64);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_si_64);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_ui_64);
 			this->groupBox8->Controls->Add(this->label34);
 			this->groupBox8->Controls->Add(this->label33);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_10sf);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_sf_32);
 			this->groupBox8->Controls->Add(this->label32);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_10si);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_si_32);
 			this->groupBox8->Controls->Add(this->textBox_byte_value);
 			this->groupBox8->Controls->Add(this->label30);
 			this->groupBox8->Controls->Add(this->label31);
-			this->groupBox8->Controls->Add(this->textBox_byte_value_10ui);
+			this->groupBox8->Controls->Add(this->textBox_byte_value_ui_32);
 			this->groupBox8->Location = System::Drawing::Point(28, 319);
-			this->groupBox8->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox8->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox8->Name = L"groupBox8";
-			this->groupBox8->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->groupBox8->Size = System::Drawing::Size(1212, 247);
+			this->groupBox8->Padding = System::Windows::Forms::Padding(6);
+			this->groupBox8->Size = System::Drawing::Size(1212, 238);
 			this->groupBox8->TabIndex = 41;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"[ byte - calculator/converter ]";
+			// 
+			// label43
+			// 
+			this->label43->AutoSize = true;
+			this->label43->Location = System::Drawing::Point(131, 43);
+			this->label43->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label43->Name = L"label43";
+			this->label43->Size = System::Drawing::Size(168, 25);
+			this->label43->TabIndex = 58;
+			this->label43->Text = L"unsigned int (hex)";
+			// 
+			// textBox_byte_value_ui_64_hex
+			// 
+			this->textBox_byte_value_ui_64_hex->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_ui_64_hex->Location = System::Drawing::Point(78, 122);
+			this->textBox_byte_value_ui_64_hex->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_ui_64_hex->Name = L"textBox_byte_value_ui_64_hex";
+			this->textBox_byte_value_ui_64_hex->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_ui_64_hex->TabIndex = 57;
+			this->textBox_byte_value_ui_64_hex->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_ui_64_hex_TextChanged);
+			// 
+			// textBox_byte_value_ui_32_hex
+			// 
+			this->textBox_byte_value_ui_32_hex->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_ui_32_hex->Location = System::Drawing::Point(78, 74);
+			this->textBox_byte_value_ui_32_hex->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_ui_32_hex->Name = L"textBox_byte_value_ui_32_hex";
+			this->textBox_byte_value_ui_32_hex->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_ui_32_hex->TabIndex = 56;
+			this->textBox_byte_value_ui_32_hex->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_ui_32_hex_TextChanged);
 			// 
 			// label35
 			// 
@@ -1004,35 +1109,35 @@ namespace Project1 {
 			this->label36->TabIndex = 54;
 			this->label36->Text = L"x32";
 			// 
-			// textBox_byte_value_16sf
+			// textBox_byte_value_sf_64
 			// 
-			this->textBox_byte_value_16sf->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16sf->Location = System::Drawing::Point(829, 122);
-			this->textBox_byte_value_16sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_16sf->Name = L"textBox_byte_value_16sf";
-			this->textBox_byte_value_16sf->Size = System::Drawing::Size(358, 29);
-			this->textBox_byte_value_16sf->TabIndex = 53;
-			this->textBox_byte_value_16sf->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16sf_TextChanged);
+			this->textBox_byte_value_sf_64->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_sf_64->Location = System::Drawing::Point(918, 122);
+			this->textBox_byte_value_sf_64->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_sf_64->Name = L"textBox_byte_value_sf_64";
+			this->textBox_byte_value_sf_64->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_sf_64->TabIndex = 53;
+			this->textBox_byte_value_sf_64->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_sf_64_TextChanged);
 			// 
-			// textBox_byte_value_16si
+			// textBox_byte_value_si_64
 			// 
-			this->textBox_byte_value_16si->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16si->Location = System::Drawing::Point(457, 122);
-			this->textBox_byte_value_16si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_16si->Name = L"textBox_byte_value_16si";
-			this->textBox_byte_value_16si->Size = System::Drawing::Size(358, 29);
-			this->textBox_byte_value_16si->TabIndex = 52;
-			this->textBox_byte_value_16si->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16si_TextChanged);
+			this->textBox_byte_value_si_64->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_si_64->Location = System::Drawing::Point(638, 122);
+			this->textBox_byte_value_si_64->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_si_64->Name = L"textBox_byte_value_si_64";
+			this->textBox_byte_value_si_64->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_si_64->TabIndex = 52;
+			this->textBox_byte_value_si_64->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_si_64_TextChanged);
 			// 
-			// textBox_byte_value_16ui
+			// textBox_byte_value_ui_64
 			// 
-			this->textBox_byte_value_16ui->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_16ui->Location = System::Drawing::Point(72, 122);
-			this->textBox_byte_value_16ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_16ui->Name = L"textBox_byte_value_16ui";
-			this->textBox_byte_value_16ui->Size = System::Drawing::Size(371, 29);
-			this->textBox_byte_value_16ui->TabIndex = 51;
-			this->textBox_byte_value_16ui->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_16ui_TextChanged);
+			this->textBox_byte_value_ui_64->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_ui_64->Location = System::Drawing::Point(358, 122);
+			this->textBox_byte_value_ui_64->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_ui_64->Name = L"textBox_byte_value_ui_64";
+			this->textBox_byte_value_ui_64->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_ui_64->TabIndex = 51;
+			this->textBox_byte_value_ui_64->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_ui_64_TextChanged);
 			// 
 			// label34
 			// 
@@ -1046,62 +1151,62 @@ namespace Project1 {
 			// label33
 			// 
 			this->label33->AutoSize = true;
-			this->label33->Location = System::Drawing::Point(957, 44);
+			this->label33->Location = System::Drawing::Point(973, 44);
 			this->label33->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label33->Name = L"label33";
-			this->label33->Size = System::Drawing::Size(111, 25);
+			this->label33->Size = System::Drawing::Size(162, 25);
 			this->label33->TabIndex = 44;
-			this->label33->Text = L"signed float";
+			this->label33->Text = L"signed float (dec)";
 			// 
-			// textBox_byte_value_10sf
+			// textBox_byte_value_sf_32
 			// 
-			this->textBox_byte_value_10sf->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10sf->Location = System::Drawing::Point(829, 74);
-			this->textBox_byte_value_10sf->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_10sf->Name = L"textBox_byte_value_10sf";
-			this->textBox_byte_value_10sf->Size = System::Drawing::Size(358, 29);
-			this->textBox_byte_value_10sf->TabIndex = 43;
-			this->textBox_byte_value_10sf->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10sf_TextChanged);
+			this->textBox_byte_value_sf_32->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_sf_32->Location = System::Drawing::Point(918, 74);
+			this->textBox_byte_value_sf_32->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_sf_32->Name = L"textBox_byte_value_sf_32";
+			this->textBox_byte_value_sf_32->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_sf_32->TabIndex = 43;
+			this->textBox_byte_value_sf_32->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_sf_32_TextChanged);
 			// 
 			// label32
 			// 
 			this->label32->AutoSize = true;
-			this->label32->Location = System::Drawing::Point(590, 44);
+			this->label32->Location = System::Drawing::Point(703, 44);
 			this->label32->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label32->Name = L"label32";
-			this->label32->Size = System::Drawing::Size(95, 25);
+			this->label32->Size = System::Drawing::Size(146, 25);
 			this->label32->TabIndex = 42;
-			this->label32->Text = L"signed int";
+			this->label32->Text = L"signed int (dec)";
 			// 
-			// textBox_byte_value_10si
+			// textBox_byte_value_si_32
 			// 
-			this->textBox_byte_value_10si->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10si->Location = System::Drawing::Point(457, 74);
-			this->textBox_byte_value_10si->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_10si->Name = L"textBox_byte_value_10si";
-			this->textBox_byte_value_10si->Size = System::Drawing::Size(358, 29);
-			this->textBox_byte_value_10si->TabIndex = 41;
-			this->textBox_byte_value_10si->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10si_TextChanged);
+			this->textBox_byte_value_si_32->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_si_32->Location = System::Drawing::Point(638, 74);
+			this->textBox_byte_value_si_32->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_si_32->Name = L"textBox_byte_value_si_32";
+			this->textBox_byte_value_si_32->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_si_32->TabIndex = 41;
+			this->textBox_byte_value_si_32->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_si_32_TextChanged);
 			// 
 			// textBox_byte_value
 			// 
 			this->textBox_byte_value->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value->Location = System::Drawing::Point(72, 186);
-			this->textBox_byte_value->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox_byte_value->Location = System::Drawing::Point(78, 186);
+			this->textBox_byte_value->Margin = System::Windows::Forms::Padding(6);
 			this->textBox_byte_value->Name = L"textBox_byte_value";
-			this->textBox_byte_value->Size = System::Drawing::Size(1115, 29);
+			this->textBox_byte_value->Size = System::Drawing::Size(1109, 29);
 			this->textBox_byte_value->TabIndex = 36;
 			this->textBox_byte_value->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_TextChanged);
 			// 
 			// label30
 			// 
 			this->label30->AutoSize = true;
-			this->label30->Location = System::Drawing::Point(202, 44);
+			this->label30->Location = System::Drawing::Point(416, 44);
 			this->label30->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(117, 25);
+			this->label30->Size = System::Drawing::Size(168, 25);
 			this->label30->TabIndex = 40;
-			this->label30->Text = L"unsigned int";
+			this->label30->Text = L"unsigned int (dec)";
 			// 
 			// label31
 			// 
@@ -1113,34 +1218,100 @@ namespace Project1 {
 			this->label31->TabIndex = 38;
 			this->label31->Text = L"bytes";
 			// 
-			// textBox_byte_value_10ui
+			// textBox_byte_value_ui_32
 			// 
-			this->textBox_byte_value_10ui->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox_byte_value_10ui->Location = System::Drawing::Point(72, 74);
-			this->textBox_byte_value_10ui->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
-			this->textBox_byte_value_10ui->Name = L"textBox_byte_value_10ui";
-			this->textBox_byte_value_10ui->Size = System::Drawing::Size(371, 29);
-			this->textBox_byte_value_10ui->TabIndex = 37;
-			this->textBox_byte_value_10ui->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_10ui_TextChanged);
+			this->textBox_byte_value_ui_32->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_value_ui_32->Location = System::Drawing::Point(358, 74);
+			this->textBox_byte_value_ui_32->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_value_ui_32->Name = L"textBox_byte_value_ui_32";
+			this->textBox_byte_value_ui_32->Size = System::Drawing::Size(268, 29);
+			this->textBox_byte_value_ui_32->TabIndex = 37;
+			this->textBox_byte_value_ui_32->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_value_ui_32_TextChanged);
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->groupBox9);
 			this->tabPage3->Controls->Add(this->groupBox1);
 			this->tabPage3->Controls->Add(this->groupBox2);
 			this->tabPage3->Location = System::Drawing::Point(4, 33);
-			this->tabPage3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage3->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Page3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// groupBox9
+			// 
+			this->groupBox9->Controls->Add(this->label29);
+			this->groupBox9->Controls->Add(this->label40);
+			this->groupBox9->Controls->Add(this->label42);
+			this->groupBox9->Controls->Add(this->textBox_str_for_byte_value);
+			this->groupBox9->Controls->Add(this->textBox_byte_from_str_value);
+			this->groupBox9->Location = System::Drawing::Point(28, 558);
+			this->groupBox9->Margin = System::Windows::Forms::Padding(6);
+			this->groupBox9->Name = L"groupBox9";
+			this->groupBox9->Padding = System::Windows::Forms::Padding(6);
+			this->groupBox9->Size = System::Drawing::Size(1212, 178);
+			this->groupBox9->TabIndex = 42;
+			this->groupBox9->TabStop = false;
+			this->groupBox9->Text = L"[ string <> bytes converter ]";
+			// 
+			// label29
+			// 
+			this->label29->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label29->Location = System::Drawing::Point(11, 102);
+			this->label29->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label29->Name = L"label29";
+			this->label29->Size = System::Drawing::Size(1190, 4);
+			this->label29->TabIndex = 39;
+			// 
+			// label40
+			// 
+			this->label40->AutoSize = true;
+			this->label40->Location = System::Drawing::Point(11, 57);
+			this->label40->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label40->Name = L"label40";
+			this->label40->Size = System::Drawing::Size(59, 25);
+			this->label40->TabIndex = 40;
+			this->label40->Text = L"string";
+			// 
+			// label42
+			// 
+			this->label42->AutoSize = true;
+			this->label42->Location = System::Drawing::Point(11, 122);
+			this->label42->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label42->Name = L"label42";
+			this->label42->Size = System::Drawing::Size(103, 25);
+			this->label42->TabIndex = 38;
+			this->label42->Text = L"ida pattern";
+			// 
+			// textBox_str_for_byte_value
+			// 
+			this->textBox_str_for_byte_value->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_str_for_byte_value->Location = System::Drawing::Point(145, 52);
+			this->textBox_str_for_byte_value->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_str_for_byte_value->Name = L"textBox_str_for_byte_value";
+			this->textBox_str_for_byte_value->Size = System::Drawing::Size(1042, 29);
+			this->textBox_str_for_byte_value->TabIndex = 37;
+			this->textBox_str_for_byte_value->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_str_for_byte_value_TextChanged);
+			// 
+			// textBox_byte_from_str_value
+			// 
+			this->textBox_byte_from_str_value->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox_byte_from_str_value->Location = System::Drawing::Point(145, 116);
+			this->textBox_byte_from_str_value->Margin = System::Windows::Forms::Padding(6);
+			this->textBox_byte_from_str_value->Name = L"textBox_byte_from_str_value";
+			this->textBox_byte_from_str_value->Size = System::Drawing::Size(1042, 29);
+			this->textBox_byte_from_str_value->TabIndex = 36;
+			this->textBox_byte_from_str_value->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox_byte_from_str_value_TextChanged);
+			// 
 			// tabPage4
 			// 
 			this->tabPage4->Controls->Add(this->groupBox7);
 			this->tabPage4->Controls->Add(this->groupBox6);
 			this->tabPage4->Location = System::Drawing::Point(4, 33);
-			this->tabPage4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage4->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage4->Name = L"tabPage4";
 			this->tabPage4->Size = System::Drawing::Size(1274, 1073);
 			this->tabPage4->TabIndex = 3;
@@ -1150,9 +1321,9 @@ namespace Project1 {
 			// groupBox7
 			// 
 			this->groupBox7->Location = System::Drawing::Point(645, 28);
-			this->groupBox7->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox7->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox7->Name = L"groupBox7";
-			this->groupBox7->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox7->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox7->Size = System::Drawing::Size(590, 1004);
 			this->groupBox7->TabIndex = 42;
 			this->groupBox7->TabStop = false;
@@ -1163,9 +1334,9 @@ namespace Project1 {
 			this->groupBox6->Controls->Add(this->comboBox_settings_hexstyle);
 			this->groupBox6->Controls->Add(this->label27);
 			this->groupBox6->Location = System::Drawing::Point(28, 28);
-			this->groupBox6->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox6->Margin = System::Windows::Forms::Padding(6);
 			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->groupBox6->Padding = System::Windows::Forms::Padding(6);
 			this->groupBox6->Size = System::Drawing::Size(590, 1004);
 			this->groupBox6->TabIndex = 41;
 			this->groupBox6->TabStop = false;
@@ -1176,7 +1347,7 @@ namespace Project1 {
 			this->comboBox_settings_hexstyle->FormattingEnabled = true;
 			this->comboBox_settings_hexstyle->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"uppercase", L"lowercase" });
 			this->comboBox_settings_hexstyle->Location = System::Drawing::Point(303, 52);
-			this->comboBox_settings_hexstyle->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->comboBox_settings_hexstyle->Margin = System::Windows::Forms::Padding(6);
 			this->comboBox_settings_hexstyle->Name = L"comboBox_settings_hexstyle";
 			this->comboBox_settings_hexstyle->Size = System::Drawing::Size(257, 32);
 			this->comboBox_settings_hexstyle->TabIndex = 0;
@@ -1200,7 +1371,7 @@ namespace Project1 {
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->label_notepad);
 			this->Controls->Add(this->richTextBox_notepad);
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->MaximizeBox = false;
 			this->MaximumSize = System::Drawing::Size(1890, 1196);
 			this->Name = L"MyForm";
@@ -1225,6 +1396,8 @@ namespace Project1 {
 			this->groupBox8->ResumeLayout(false);
 			this->groupBox8->PerformLayout();
 			this->tabPage3->ResumeLayout(false);
+			this->groupBox9->ResumeLayout(false);
+			this->groupBox9->PerformLayout();
 			this->tabPage4->ResumeLayout(false);
 			this->groupBox6->ResumeLayout(false);
 			this->groupBox6->PerformLayout();
@@ -1409,9 +1582,9 @@ namespace Project1 {
 	{
 		// int/hex
 		if (bHex)
-			*Value1 = (unsigned __int64)Calc16_ui::Do(sText);
+			*Value1 = (unsigned __int64)calc_ui_hex_t().Do(sText);
 		else
-			*Value1 = (unsigned __int64)Calc10_ui::Do(sText);
+			*Value1 = (unsigned __int64)calc_ui_dec_t().Do(sText);
 
 		// x32/x64
 		if (X == 64)
@@ -1423,9 +1596,9 @@ namespace Project1 {
 	{
 		// int/hex
 		if (bHex)
-			*Value2 = (signed __int64)Calc16_si::Do(sText);
+			*Value2 = (signed __int64)calc_si_hex_t().Do(sText);
 		else
-			*Value2 = (signed __int64)Calc10_si::Do(sText);
+			*Value2 = (signed __int64)calc_si_dec_t().Do(sText);
 
 		// x32/x64
 		if (X == 64)
@@ -1437,9 +1610,9 @@ namespace Project1 {
 	{
 		// int/hex
 		if (bHex)
-			*Value3 = (long double)Calc16_sf::Do(sText);
+			*Value3 = (long double)calc_sf_hex_t().Do(sText);
 		else
-			*Value3 = (long double)Calc10_sf::Do(sText);
+			*Value3 = (long double)calc_sf_dec_t().Do(sText);
 
 		// x32/x64
 		if (X == 64)
@@ -1841,9 +2014,10 @@ namespace Project1 {
 		unsigned __int64 Value1;
 		bool bHex = IsHex(sText);
 		if (bHex)
-			Value1 = Calc_bits16::Do(sText);
+			Value1 = calc_ui_hex_bits_t().Do(sText);
 		else
-			Value1 = Calc_bits10::Do(sText);
+			Value1 = calc_ui_dec_bits_t().Do(sText);
+
 		int X = GetX(Value1);
 
 		SetHexValue1(this->textBox_bit_value1, this->comboBox_settings_hexstyle, Value1, X);
@@ -1870,9 +2044,9 @@ namespace Project1 {
 		unsigned __int64 Value1;
 		bool bHex = IsHex(sText);
 		if (bHex)
-			Value1 = Calc_bits16::Do(sText);
+			Value1 = calc_ui_hex_bits_t().Do(sText);
 		else
-			Value1 = Calc_bits10::Do(sText);
+			Value1 = calc_ui_dec_bits_t().Do(sText);
 		int X = GetX(Value1);
 
 		SetHexValue1(this->textBox_bit_value1, this->comboBox_settings_hexstyle, Value1, X);
@@ -1901,16 +2075,20 @@ namespace Project1 {
 			sText.erase(idx, 1);
 
 		// do
+		unsigned __int64 Value1_hex = 0;
 		unsigned __int64 Value1 = 0;
 		signed __int64 Value2 = 0;
 		long double Value3 = 0;
+		unsigned __int32 Value4_hex = 0;
 		unsigned __int32 Value4 = 0;
 		signed __int32 Value5 = 0;
 		float Value6 = 0;
 
+		unsigned char* pValue1_hex = (unsigned char*)&Value1_hex;
 		unsigned char* pValue1 = (unsigned char*)&Value1;
 		unsigned char* pValue2 = (unsigned char*)&Value2;
 		unsigned char* pValue3 = (unsigned char*)&Value3;
+		unsigned char* pValue4_hex = (unsigned char*)&Value4_hex;
 		unsigned char* pValue4 = (unsigned char*)&Value4;
 		unsigned char* pValue5 = (unsigned char*)&Value5;
 		unsigned char* pValue6 = (unsigned char*)&Value6;
@@ -1922,11 +2100,13 @@ namespace Project1 {
 			if (sByte.size() > 1)
 			{
 				int iByte = static_cast<unsigned char>(std::atof(("0x" + sByte).c_str()));
+				pValue1_hex[idx] = iByte;
 				pValue1[idx] = iByte;
 				pValue2[idx] = iByte;
 				pValue3[idx] = iByte;
 				if (idx < 4)
 				{
+					pValue4_hex[idx] = iByte;
 					pValue4[idx] = iByte;
 					pValue5[idx] = iByte;
 					pValue6[idx] = iByte;
@@ -1940,11 +2120,13 @@ namespace Project1 {
 			else if (sByte.size() > 0)
 			{
 				int iByte = static_cast<unsigned char>(std::atof(("0x" + sByte).c_str()));
+				pValue1_hex[idx] = iByte;
 				pValue1[idx] = iByte;
 				pValue2[idx] = iByte;
 				pValue3[idx] = iByte;
 				if (idx < 4)
 				{
+					pValue4_hex[idx] = iByte;
 					pValue4[idx] = iByte;
 					pValue5[idx] = iByte;
 					pValue6[idx] = iByte;
@@ -1956,11 +2138,13 @@ namespace Project1 {
 		if (sByte.size() > 0)
 		{
 			int iByte = static_cast<unsigned char>(std::atof(("0x" + sByte).c_str()));
+			pValue1_hex[idx] = iByte;
 			pValue1[idx] = iByte;
 			pValue2[idx] = iByte;
 			pValue3[idx] = iByte;
 			if (idx < 4)
 			{
+				pValue4_hex[idx] = iByte;
 				pValue4[idx] = iByte;
 				pValue5[idx] = iByte;
 				pValue6[idx] = iByte;
@@ -1971,11 +2155,19 @@ namespace Project1 {
 
 		// output
 		SS.str("");
+		SS << "0x" << std::hex << Value4_hex;
+		Str = SS.str();
+		Output = gcnew String(Str.c_str());
+		OutputUsed = true;
+		this->textBox_byte_value_ui_32_hex->Text = Output;
+		OutputUsed = false;
+
+		SS.str("");
 		SS << Value4;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_10ui->Text = Output;
+		this->textBox_byte_value_ui_32->Text = Output;
 		OutputUsed = false;
 
 		SS.str("");
@@ -1983,7 +2175,7 @@ namespace Project1 {
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_10si->Text = Output;
+		this->textBox_byte_value_si_32->Text = Output;
 		OutputUsed = false;
 
 		SS.str("");
@@ -1991,7 +2183,15 @@ namespace Project1 {
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_10sf->Text = Output;
+		this->textBox_byte_value_sf_32->Text = Output;
+		OutputUsed = false;
+
+		SS.str("");
+		SS << "0x" << std::hex << Value1_hex;
+		Str = SS.str();
+		Output = gcnew String(Str.c_str());
+		OutputUsed = true;
+		this->textBox_byte_value_ui_64_hex->Text = Output;
 		OutputUsed = false;
 
 		SS.str("");
@@ -1999,7 +2199,7 @@ namespace Project1 {
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_16ui->Text = Output;
+		this->textBox_byte_value_ui_64->Text = Output;
 		OutputUsed = false;
 
 		SS.str("");
@@ -2007,7 +2207,7 @@ namespace Project1 {
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_16si->Text = Output;
+		this->textBox_byte_value_si_64->Text = Output;
 		OutputUsed = false;
 
 		SS.str("");
@@ -2015,11 +2215,11 @@ namespace Project1 {
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
-		this->textBox_byte_value_16sf->Text = Output;
+		this->textBox_byte_value_sf_64->Text = Output;
 		OutputUsed = false;
 	}
 
-	private: System::Void textBox_byte_value_10ui_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_ui_32_hex_TextChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (OutputUsed)
 			return;
@@ -2030,17 +2230,17 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_10ui, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_10ui->Text);
+		ClearData(this->textBox_byte_value_ui_32_hex, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_ui_32_hex->Text);
 
 		unsigned __int32 Value;
 
 		// int/hex
 		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (unsigned __int32)Calc16_ui::Do(sText);
-		else
-			Value = (unsigned __int32)Calc10_ui::Do(sText);
+		//if (bHex)
+			Value = (unsigned __int32)calc_ui_hex_t().Do(sText);
+		//else
+		//	Value = (unsigned __int32)calc_ui_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 4; i++)
@@ -2056,7 +2256,7 @@ namespace Project1 {
 		this->textBox_byte_value->Text = Output;
 		OutputUsed = false;
 	}
-	private: System::Void textBox_byte_value_10si_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_ui_32_TextChanged(System::Object^ sender, System::EventArgs^ e) 
 	{
 		if (OutputUsed)
 			return;
@@ -2067,17 +2267,54 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_10si, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_10si->Text);
+		ClearData(this->textBox_byte_value_ui_32, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_ui_32->Text);
+
+		unsigned __int32 Value;
+
+		// int/hex
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (unsigned __int32)calc_ui_hex_t().Do(sText);
+		//else
+			Value = (unsigned __int32)calc_ui_dec_t().Do(sText);
+
+		SS.str("");
+		for (int i = 0; i < 4; i++)
+		{
+			unsigned char* l = (unsigned char*)&Value;
+
+			SS << std::setfill('0') << std::setw(2) << std::hex << (int)l[i] << " ";
+		}
+
+		Str = SS.str();
+		Output = gcnew String(Str.c_str());
+		OutputUsed = true;
+		this->textBox_byte_value->Text = Output;
+		OutputUsed = false;
+	}
+	private: System::Void textBox_byte_value_si_32_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		if (OutputUsed)
+			return;
+
+		// init
+		String^ Output;
+		std::stringstream SS;
+		std::string Str;
+
+		// get
+		ClearData(this->textBox_byte_value_si_32, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_si_32->Text);
 
 		signed __int32 Value;
 
 		// int/hex
-		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (signed __int32)Calc16_si::Do(sText);
-		else
-			Value = (signed __int32)Calc10_si::Do(sText);
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (signed __int32)calc_si_hex_t().Do(sText);
+		//else
+			Value = (signed __int32)calc_si_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 4; i++)
@@ -2093,7 +2330,7 @@ namespace Project1 {
 		this->textBox_byte_value->Text = Output;
 		OutputUsed = false;
 	}
-	private: System::Void textBox_byte_value_10sf_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_sf_32_TextChanged(System::Object^ sender, System::EventArgs^ e) 
 	{
 		if (OutputUsed)
 			return;
@@ -2104,17 +2341,17 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_10sf, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_10sf->Text);
+		ClearData(this->textBox_byte_value_sf_32, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_sf_32->Text);
 
 		float Value;
 
 		// int/hex
-		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (float)Calc16_sf::Do(sText);
-		else
-			Value = (float)Calc10_sf::Do(sText);
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (float)calc_sf_hex_t().Do(sText);
+		//else
+			Value = (float)calc_sf_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 4; i++)
@@ -2131,7 +2368,7 @@ namespace Project1 {
 		OutputUsed = false;
 	}
 
-	private: System::Void textBox_byte_value_16ui_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_ui_64_hex_TextChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (OutputUsed)
 			return;
@@ -2142,17 +2379,17 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_16ui, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_16ui->Text);
+		ClearData(this->textBox_byte_value_ui_64_hex, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_ui_64_hex->Text);
 
 		unsigned __int64 Value;
 
 		// int/hex
-		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (unsigned __int64)Calc16_ui::Do(sText);
-		else
-			Value = (unsigned __int64)Calc10_ui::Do(sText);
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+			Value = (unsigned __int64)calc_ui_hex_t().Do(sText);
+		//else
+		//	Value = (unsigned __int64)calc_ui_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 8; i++)
@@ -2168,7 +2405,7 @@ namespace Project1 {
 		this->textBox_byte_value->Text = Output;
 		OutputUsed = false;
 	}
-	private: System::Void textBox_byte_value_16si_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_ui_64_TextChanged(System::Object^ sender, System::EventArgs^ e) 
 	{
 		if (OutputUsed)
 			return;
@@ -2179,17 +2416,54 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_16si, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_16si->Text);
+		ClearData(this->textBox_byte_value_ui_64, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_ui_64->Text);
+
+		unsigned __int64 Value;
+
+		// int/hex
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (unsigned __int64)calc_ui_hex_t().Do(sText);
+		//else
+			Value = (unsigned __int64)calc_ui_dec_t().Do(sText);
+
+		SS.str("");
+		for (int i = 0; i < 8; i++)
+		{
+			unsigned char* l = (unsigned char*)&Value;
+
+			SS << std::setfill('0') << std::setw(2) << std::hex << (int)l[i] << " ";
+		}
+
+		Str = SS.str();
+		Output = gcnew String(Str.c_str());
+		OutputUsed = true;
+		this->textBox_byte_value->Text = Output;
+		OutputUsed = false;
+	}
+	private: System::Void textBox_byte_value_si_64_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		if (OutputUsed)
+			return;
+
+		// init
+		String^ Output;
+		std::stringstream SS;
+		std::string Str;
+
+		// get
+		ClearData(this->textBox_byte_value_si_64, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_si_64->Text);
 
 		signed __int64 Value;
 
 		// int/hex
-		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (signed __int64)Calc16_si::Do(sText);
-		else
-			Value = (signed __int64)Calc10_si::Do(sText);
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (signed __int64)calc_si_hex_t().Do(sText);
+		//else
+			Value = (signed __int64)calc_si_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 8; i++)
@@ -2205,7 +2479,7 @@ namespace Project1 {
 		this->textBox_byte_value->Text = Output;
 		OutputUsed = false;
 	}
-	private: System::Void textBox_byte_value_16sf_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void textBox_byte_value_sf_64_TextChanged(System::Object^ sender, System::EventArgs^ e) 
 	{
 		if (OutputUsed)
 			return;
@@ -2216,17 +2490,17 @@ namespace Project1 {
 		std::string Str;
 
 		// get
-		ClearData(this->textBox_byte_value_16sf, this->comboBox_settings_hexstyle);
-		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_16sf->Text);
+		ClearData(this->textBox_byte_value_sf_64, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_value_sf_64->Text);
 
 		long double Value;
 
 		// int/hex
-		bool bHex = IsHex(sText);
-		if (bHex)
-			Value = (long double)Calc16_sf::Do(sText);
-		else
-			Value = (long double)Calc10_sf::Do(sText);
+		//bool bHex = IsHex(sText);
+		//if (bHex)
+		//	Value = (long double)calc_sf_hex_t().Do(sText);
+		//else
+			Value = (long double)calc_sf_dec_t().Do(sText);
 
 		SS.str("");
 		for (int i = 0; i < 8; i++)
@@ -2316,6 +2590,15 @@ namespace Project1 {
 
 		}
 
+		// Make bytes
+		std::string sBytes = "";
+		sBytes = sCodeP;
+		while (sBytes.size() && (Idx = sBytes.find("\\")) != -1) {
+			sBytes.erase(Idx, 1);
+			if (Idx != 0) sBytes.insert(Idx, ", 0");
+			else sBytes.insert(Idx, "0");
+		}
+
 		// Output
 		OutputUsed = true;
 		auto BackupSelectionStart = this->textBox_idap->SelectionStart - ((int)(sIdaP.size() - sIdaP2.size()));
@@ -2333,12 +2616,97 @@ namespace Project1 {
 		Output = gcnew String(sCodeM.c_str());
 		this->textBox_codem->Text = Output;
 
+		// bytes
+		Output = gcnew String(sBytes.c_str());
+		this->textBox_bytes->Text = Output;
+
 		// size
 		Output = gcnew String(("size: " + std::to_string(BytesCount + 1)).c_str());
 		this->label_size->Text = Output;
 
 
 		this->textBox_idap->SelectionStart = BackupSelectionStart;
+		OutputUsed = false;
+	}
+
+	private: System::Void textBox_bytes_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		if (OutputUsed)
+			return;
+
+		String^ Output;
+		int Idx;
+
+		// Get
+		ClearData(this->textBox_bytes, this->comboBox_settings_hexstyle);
+		std::string sBytes = msclr::interop::marshal_as<std::string>(this->textBox_bytes->Text);
+
+		// Build 1
+		std::string sIdaP = sBytes;
+		while (sIdaP.size() && (Idx = sIdaP.find(" ")) != -1)
+			sIdaP.erase(Idx, 1);
+		while (sIdaP.size() && (Idx = sIdaP.find("0x")) != -1)
+			sIdaP.erase(Idx, 2);
+		while (sIdaP.size() && (Idx = sIdaP.find(",")) != -1) {
+			sIdaP.erase(Idx, 1);
+			sIdaP.insert(Idx, " ");
+		}
+
+		// Make code pattern/mask
+		std::string sCodeP = "";
+		std::string sCodeM = "";
+		int BytesCount = 0;
+		for (int i = 0; i < sIdaP.size(); i++)
+		{
+			if (i == sIdaP.size() - 1 && sIdaP[i] == ' ')
+				break;
+
+			if (i == 0)
+				sCodeP += "\\x";
+
+			if (sIdaP[i] == ' ')
+			{
+				sCodeP += "\\x";
+				BytesCount++;
+			}
+			else if (sIdaP[i] == '?')
+			{
+				sCodeP += "00";
+				if (i == 0 || sIdaP[i - 1] == ' ')
+					sCodeM += "?";
+			}
+			else
+			{
+				sCodeP += sIdaP[i];
+				if (i == 0 || sIdaP[i - 1] == ' ')
+					sCodeM += "x";
+			}
+
+		}
+
+		// Output
+		OutputUsed = true;
+
+		// idap
+		Output = gcnew String(sIdaP.c_str());
+		this->textBox_idap->Text = Output;
+
+		// codep
+		Output = gcnew String(sCodeP.c_str());
+		this->textBox_codep->Text = Output;
+
+		// codem
+		Output = gcnew String(sCodeM.c_str());
+		this->textBox_codem->Text = Output;
+
+		// bytes
+		Output = gcnew String(sBytes.c_str());
+		this->textBox_bytes->Text = Output;
+
+		// size
+		Output = gcnew String(("size: " + std::to_string(BytesCount + 1)).c_str());
+		this->label_size->Text = Output;
+
 		OutputUsed = false;
 	}
 
@@ -2375,12 +2743,15 @@ namespace Project1 {
 
 		if (sCodeP2.size() >= 2 && sCodeP2[0] != '\\' && sCodeP2[0] != 'x')
 			sCodeP2 = 'x' + sCodeP2;
+		while (sCodeP2.size() && (Idx = sCodeP2.find("0x")) != -1)
+			sCodeP2.erase(Idx, 1);
 		while (sCodeP2.size() && (Idx = sCodeP2.find("\\\\")) != -1)
 			sCodeP2.erase(Idx, 1);
 		while (sCodeP2.size() && (Idx = sCodeP2.find("XX")) != -1)
 			sCodeP2.erase(Idx, 1);
 		while (sCodeP2.size() && (Idx = sCodeP2.find("xx")) != -1)
 			sCodeP2.erase(Idx, 1);
+
 		if (!GetAsyncKeyState(0x58) && !GetAsyncKeyState(VK_OEM_5) && !GetAsyncKeyState(VK_DELETE) && !GetAsyncKeyState(VK_BACK))
 		{
 			while (sCodeP2.size() && sCodeP2[sCodeP2.size() - 1] == 'x' || sCodeP2.size() && sCodeP2[sCodeP2.size() - 1] == '\\')
@@ -2488,6 +2859,15 @@ namespace Project1 {
 			}
 		}
 
+		// Make bytes
+		std::string sBytes = "";
+		sBytes = sCodeP3;
+		while (sBytes.size() && (Idx = sBytes.find("\\")) != -1) {
+			sBytes.erase(Idx, 1);
+			if (Idx != 0) sBytes.insert(Idx, ", 0");
+			else sBytes.insert(Idx, "0");
+		}
+
 		// Output
 		OutputUsed = true;
 		auto BackupSelectionStart = this->textBox_codep->SelectionStart - ((int)(sCodeP.size() - sCodeP3.size()));
@@ -2504,6 +2884,10 @@ namespace Project1 {
 		// codem
 		Output = gcnew String(sCodeM.c_str());
 		this->textBox_codem->Text = Output;
+
+		// bytes
+		Output = gcnew String(sBytes.c_str());
+		this->textBox_bytes->Text = Output;
 
 		// size
 		Output = gcnew String(("size: " + std::to_string(iMaskPos + 1)).c_str());
@@ -2644,6 +3028,92 @@ namespace Project1 {
 		Output = gcnew String(sText.c_str());
 		this->textBox_uc->Text = Output;
 	}
+
+
+	// String to bytes
+	private: System::Void textBox_str_for_byte_value_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		if (OutputUsed)
+			return;
+
+		String^ Output;
+		std::stringstream SS;
+
+		// Get
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_str_for_byte_value->Text);
+
+		// Do
+		std::string sBytes = "";
+		for (int i = 0; i < sText.size(); i++)
+		{
+			SS.str("");
+			SS << std::setfill('0') << std::setw(2) << std::hex << (int)sText[i] << " ";
+			sBytes += SS.str();
+		}
+
+		// Out
+		OutputUsed = true;
+
+		Output = gcnew String(sBytes.c_str());
+		this->textBox_byte_from_str_value->Text = Output;
+		ClearData(this->textBox_byte_from_str_value, this->comboBox_settings_hexstyle);
+
+		OutputUsed = false;
+	}
+
+	
+	private: System::Void textBox_byte_from_str_value_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+		if (OutputUsed)
+			return;
+
+		String^ Output;
+		int Idx;
+
+		// Get
+		ClearData(this->textBox_byte_from_str_value, this->comboBox_settings_hexstyle);
+		std::string sText = msclr::interop::marshal_as<std::string>(this->textBox_byte_from_str_value->Text);
+
+		// Do
+		std::string sStr = "";
+		for (int i = 0; i < sText.size(); i++)
+		{
+			std::string sByte = "";
+			while (sText[i] != ' ' && i < sText.size())
+			{
+				sByte += sText[i];
+				i++;
+			}
+
+			if (sByte.size() == 2)
+				sStr += (char)strtol(sByte.c_str(), NULL, 16);
+		}
+
+		// Out
+		OutputUsed = true;
+
+		Output = gcnew String(sStr.c_str());
+		this->textBox_str_for_byte_value->Text = Output;
+
+		OutputUsed = false;
+	}
+	
+	private: System::Void richTextBox_notepad_SelectionChanged(System::Object^ sender, System::EventArgs^ e)
+	{
+		// Idiotic fix of autowordselection bug
+		if (!this->richTextBox_notepad->AutoWordSelection) {
+			this->richTextBox_notepad->AutoWordSelection = true;
+			this->richTextBox_notepad->AutoWordSelection = false;
+		}
+	}
+
+	private: System::Void richTextBox_notepad_TextChanged(System::Object^ sender, System::EventArgs^ e)
+	{
+		// Idiotic fix of text formating
+		this->richTextBox_notepad->Font = this->richTextBox_notepad->DefaultFont;
+		this->richTextBox_notepad->ResetFont();
+	}
+
 };
 }
 
