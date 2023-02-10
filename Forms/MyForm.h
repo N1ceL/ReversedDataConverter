@@ -2163,7 +2163,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value4;
+		SS << std::dec << Value4;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
@@ -2171,7 +2171,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value5;
+		SS << std::dec << Value5;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
@@ -2179,7 +2179,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value6;
+		SS << std::dec << Value6;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
@@ -2195,7 +2195,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value1;
+		SS << std::dec << Value1;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
@@ -2203,7 +2203,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value2;
+		SS << std::dec << Value2;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
@@ -2211,7 +2211,7 @@ private: System::Windows::Forms::TextBox^ textBox_byte_value_ui_32_hex;
 		OutputUsed = false;
 
 		SS.str("");
-		SS << Value3;
+		SS << std::dec << Value3;
 		Str = SS.str();
 		Output = gcnew String(Str.c_str());
 		OutputUsed = true;
