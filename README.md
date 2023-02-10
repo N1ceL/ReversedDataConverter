@@ -9,7 +9,7 @@
 
 [int/hex - calculator/converter]
 + Calculator can work with int (x10) and hex (x16) values [but all values must be in the same system].
-+ Calculator supports '+', '-', '/', '*', '^' (pow and root if value 0.5), '(', ')', '|' (abs), '.' and ',' (float numbers).
++ Calculator supports '+', '-', '/', '*', '^' (it's xor), '(', ')', '.' and ',' (float numbers).
 + This is not only calculator, it converts int (x10) to hex (x16) and hex (x16) to int (x10). Calculator outputs 6 values [unsigned int x10, signed int x10, signed float x10, unsigned int x16, signed int x16, signed float x16]. 
 + Values can be with 32 bits or 64 bits, depends on the setting.
 + There is also a second calculator, it is same but it can automatically understand system [int or hex].
@@ -28,8 +28,8 @@
 
 [byte - calculator/converter]
 + Converter can convert number to bytes (how it looks in memory) and bytes to number. Also converter can convert the wrong type of number to bytes, and then convert the bytes to all other types.
-+ Converter supports unsigned int32, signed int32, signed float32, unsigned int64, signed int64, signed float64.
-+ Converter can work with int and hex values (but it will automatically convert the number to x10).
++ Converter supports unsigned int32 (hex), unsigned int32 (dec), signed int32 (dec), signed float32 (dec), unsigned int64 (hex), unsigned int64 (dec), signed int64 (dec), signed float64 (dec).
++ Converter can work with int and hex values.
 + Deletes bad characters.
 + Also this converter still has the calculator system.
 
@@ -38,8 +38,10 @@
 + But '0x' and '\x' it will convert to lowercase in any case.
 
 [pattern converter]
-+ Can convert ida pattern to signature, and signature to ida pattern.
-+ Can convert signature to ida pattern with mask and without it.
++ Can convert ida pattern to bytes array and signature.
++ Can convert bytes array to ida pattern and signature.
++ Can convert signature to ida pattern and bytes array.
++ Can convert signature with mask and without it.
 + If the mask is missing, it will automatically generate it.
 + On ida pattern to signature convert will create the mask too.
 + If pattern/signature looks broken (extra characters like '??', '  ' and etc, missing some characters like '0x' and etc, lowercase/uppercase) it will try to fix it.
